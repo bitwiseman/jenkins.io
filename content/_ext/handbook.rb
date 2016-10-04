@@ -22,7 +22,7 @@ module Awestruct
 
       def initialize(book_dir)
         @book_dir = book_dir
-        @chapters = {}
+        @chapters = []
       end
 
       def chapter_for_path(path)
@@ -46,19 +46,28 @@ module Awestruct
         # We need a map of source files to their Awestruct::Page to avoid
         # re-rendering things too much in the process of generating this page
         pagemap = site.pages.map { |p| [p.source_path, p] }.to_h
-        chapters = Dir[File.join(@book_dir, "/**/chapter.yml")]
+        book_file = File.join(@book_dir, "book.yml")
 
-        chapters.map { |c| [c, YAML.load(File.read(c))] }.each do |file, yaml|
-          dir = File.dirname(file)
+        book_yaml = YAML.load(File.read(book_file))
+
+        chapters = book_yaml['chapters']
+
+        chapters.each do |c|
+          dir = File.join(@book_dir, c)
+          file = File.join(dir, 'chapter.yml')
           overview = File.join(dir, 'index.adoc')
-          # Without an overview page, there's no point in attempting to add
+
+          # Without an chapter file and overview page, there's no point in attempting to add
           # this to the structure
+          next unless File.exists? file
           next unless File.exists? overview
 
+          yaml = YAML.load(File.read(file))
+
           chapter = Chapter.new
-          chapter.number = yaml['chapter']
+          chapter.key = c
+          chapter.full_path = dir
           chapter.title = pagemap[overview].title
-          chapter.key = File.basename(dir)
 
           if sections = yaml['sections']
             sections.each do |s|
@@ -70,7 +79,7 @@ module Awestruct
             end
           end
 
-          site.handbook.chapters[chapter.number] = chapter
+          site.handbook.chapters << chapter
         end
       end
     end
