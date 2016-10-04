@@ -9,20 +9,17 @@ layout: default
 
     = content
 
-    - chapter_key = File.basename(File.dirname(page.source_path))
-    - chapter = site.handbook.chapter_for_path(chapter_key)
+    - site.handbook.chapters.each do |chapter|
+      - if chapter.sections && chapter.sections.size > 0
+        %h2
+          Sub-sections
 
-    - if chapter.sections && chapter.sections.size > 0
-      %h2
-        Sub-sections
-
-      %ul
-        - chapter.sections.each do |section|
-          %li
-            %a{:href => section.key}
-              = section.title
+        %ul
+          - chapter.sections.each do |section|
+            %li
+              %a{:href => section.key}
+                = section.title
 
     .section_nav.page-link
       %a{:href => '..'}
         Index
-
