@@ -1,0 +1,17 @@
+Created an org for this post:
+https://github.com/bitwise-jenkins/
+
+Forked JS-Nightwatch.js into this org then did pull requests
+from https://github.com/bitwiseman/JS-Nightwatch.js.git into
+this repo.
+
+Github org project is happy to treat this org's repos as "origin"
+even if they are forks on Github. 
+
+PR 2:
+[Pipeline] sh
+[s-org_JS-Nightwatch.js_PR-2-SUGELBOT43V4L2MBW5VNBYII6N5ZP4KJSSD5GWBID2YLXQIXHP2Q] Running shell script
++ gir clean -xfd
+/Users/bitwiseman/jenkins/agents/osx_mbp/workspace/s-org_JS-Nightwatch.js_PR-2-SUGELBOT43V4L2MBW5VNBYII6N5ZP4KJSSD5GWBID2YLXQIXHP2Q@tmp/durable-54b8823a/script.sh: line 2: gir: command not found
+[Pipeline] }
+[Pipeline] // stage
