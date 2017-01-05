@@ -1,0 +1,33 @@
+---
+layout: section
+---
+:notitle:
+:description:
+:author: Liam Newman
+:email: jenkinsci-users@googlegroups.com
+:sectanchors:
+:imagesdir: /doc/book/resources
+:toc: left
+
+= Upgrading Jenkins
+
+== Automated Upgrade
+
+The simplest way to upgrade Jenkins is to use the built-in "Automated Upgrade".
+If this option will work on your system, it will be available in the Jenkins UI
+"Manage Jenkins".
+
+image::getting-started/upgrade-automatically.png[title="Installing Upgades", 800]
+
+
+Clicking "Upgrade Automatically", will display an update page. Click the checkbox for
+"Restart Jenkins when installation is complete" and Jenkins will restart when the
+upgrade completes.
+
+image::getting-started/installing-upgrades.png[title="Installing Upgades", 800]
+
+
+== Package-based upgrade
+
+If the above is not available, you should use the usual upgrade process based on the
+platform and method used to install Jenkins.

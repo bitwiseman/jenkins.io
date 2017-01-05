@@ -8,27 +8,26 @@ layout: section
 :sectanchors:
 :toc: left
 
-= Installing Jenkins
+////
+XXX: Pages to mark as deprecated by this document:
+      * https://wiki.jenkins-ci.org/display/JENKINS/Terminology
+////
 
-[NOTE]
-====
-This is still very much a work in progress
-====
+= Installing Jenkins
 
 [IMPORTANT]
 ====
 This section is part of _Getting Started_.
-It provides instructions for *basic* Jenkins configuration on a number of platforms.
-It *DOES NOT* cover the full range of considerations or options for installing Jenkins.
+It provides *basic* instructions for installing a *non-production* Jenkins instance on a number of platforms.
+This Jenkins instance should be sufficient for learning and experimentation.
+These instructions *DO NOT* cover the full range of considerations or options for installing Jenkins.
 See link:/doc/book/appendix/advanced-installation/[Advanced Jenkins Installation]
 ====
 
 == Overview
+It is easy to install a basic Jenkins server on a wide range of platforms.
 
-
-== Pre-install
-
-=== System Requirements
+== System Requirements
 
 [WARNING]
 ====
@@ -48,27 +47,15 @@ Recommended Configuration for Small Team:
 * 1GB+ free memory
 * 50GB+ free disk space
 
-
-=== Experimentation, Staging, or Production?
-
-How you configure Jenkins will differ significantly depending on your intended use cases.
-This section is specifically targeted to initial use and experimentation.
-For other scenarios, see link:/doc/book/appendix/advanced-installation/[Advanced Jenkins Installation].
-
-=== Stand-alone or Servlet?
-
-Jenkins can run stand-alone in it's own process using it's own web server.
-It can also run as one servlet in an existing framework, such as Tomcat.
-This section is specifically targeted to stand-alone install and execution.
-For other scenarios, see link:/doc/book/appendix/advanced-installation/[Advanced Jenkins Installation]
-
 == Installation
 
 [WARNING]
 ====
 These are *clean install* instructions for *non-production* environments.
-If you have a *non-production* Jenkins server already running on a system and want to upgrade, see link:/doc/book/getting-started/upgrading/[Upgrading Jenkins].
-If you are installing or upgrading a production Jenkins server, see link:/doc/book/appendix/advanced-installation/[Advanced Jenkins Installation].
+If you have a *non-production* Jenkins server already running on a system and want to upgrade, see
+link:/doc/book/getting-started/upgrading/[Upgrading Jenkins].
+If you are installing or upgrading a production Jenkins server, see
+link:/doc/book/appendix/advanced-installation/[Advanced Jenkins Installation].
 ====
 
 === Unix/Linux
@@ -151,6 +138,7 @@ docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home -t jenkins
 ----
 
 === Other
+For other platforms and
 See link:/doc/book/appendix/advanced-installation/[Advanced Jenkins Installation]
 
 

@@ -16,7 +16,7 @@ This chapter will lead you through installing an instance of Jenkins on a
 system for learning purposes and understanding basic Jenkins concepts.  It will provide
 simple step-by-step tutorials on how to do a number common tasks.  Each section is intended
 to be completed in order, with each building on knowledge from the previous section.
-When you are done you should have enough experience with the core of Jenkins to continue
+When you are done you should have enough knowledge about the core of Jenkins to continue
 exploring on your own.
 
 If you are already familiar with Jenkins basics and would like to delve deeper into how to use specific features, see

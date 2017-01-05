@@ -1,0 +1,38 @@
+---
+layout: section
+---
+:notitle:
+:description:
+:author: Liam Newman
+:email: jenkinsci-users@googlegroups.com
+:sectanchors:
+:imagesdir: /doc/book/resources
+:toc: left
+
+= Jenkins Basics
+
+== UI
+
+
+== Server (Master)
+
+
+== Nodes (Agents)
+
+
+== Projects
+
+
+
+== Folders
+
+
+
+== Steps
+
+
+
+== Plugins
+
+
+== Pipeline
