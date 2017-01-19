@@ -1,0 +1,394 @@
+---
+layout: section
+---
+:notitle:
+:description:
+:author:
+:email: jenkinsci-docs@googlegroups.com
+:sectanchors:
+:toc:
+:hide-uri-scheme:
+
+= Converting Condition Build Steps
+
+
+Bascially, all the conditions map to `if/else` statements in Scripted Pipeline or
+`stage/when` in Declarative Pipeline.
+Some are more complex than others.
+
+Scripted pipeline and Declarative differ significantly in how they handle conditional behavior.
+It is worth discussing them separately.
+
+== Scripted Pipeline
+
+
+== Declarative Pipeline
+
+
+
+== Conditions
+The rest of this section will describe each of the conditions provided by
+the Conditional BuildStep plugin and show the Pipeline equivalent.
+
+
+[[always]]
+=== Always
+
+Always run steps. Provided for completeness.
+
+.Pipeline
+[pipeline]
+----
+// Declarative //
+stage ('Example-1') {
+    when {
+        expression { true }
+    }
+    steps {
+        echo 'Example step.'
+    }
+}
+stage ('Example-2') {
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example-1') {
+    if (true) {
+        echo 'Example step.'
+    }
+}
+stage ('Example-2') {
+    echo 'Example step.' // <1>
+}
+----
+<1> Condition is not needed for "always" case.
+
+
+=== Never
+
+Do not run steps.  Provided for completeness.
+
+.Pipeline
+[pipeline]
+----
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
+----
+<1> This step will never be executed.
+
+==== Boolean condition
+
+You might think that a boolean condition would be the simplest condition, but it isn't.
+Since it works with string values from tokens, the Conditional BuildStep plugin offers
+a number of ways to indicate true or false.
+Truth is a case-insensitive match of one of the following:
+`1` (the number one), `Y`, `YES`, `T`, `TRUE`, `ON` or `RUN`.
+
+[NOTE]
+====
+Pipeline can duplicate these, but depending on the scenario consider
+whether a simpler expression would suffice.
+====
+
+.Pipeline
+[pipeline]
+----
+// Declarative //
+stage ('Example') {
+    when {
+        expression {
+            truthPattern = /(?i)(Y|YES|T|TRUE|ON|RUN)/ // <1>
+            token ==~ truthPattern // <2>
+        }
+    }
+    steps {
+        echo 'Example step.' // <3>
+    }
+}
+// Script //
+stage ('Example') {
+    truthPattern = /(?i)(Y|YES|T|TRUE|ON|RUN)/ // <1>
+    if (token ==~ truthPattern) { // <2>
+        echo 'Example step.' // <3>
+    }
+}
+----
+<1> This is a Groovy
+link:http://groovy-lang.org/syntax.html#_slashy_string[slashy string] representing
+the case-insensitive "truth" values: `1` (the number one), `Y`, `YES`, `T`, `TRUE`, `ON` or `RUN`.
+<2> `==~` is the Groovy regular expression
+link:http://groovy-lang.org/operators.html#_match_operator[match operator].
+<3> This step will be executed if `token` contains a string matching `truthPattern`.
+
+
+[[logical]]
+=== Logical Operations
+
+These conditions wrap other conditions.
+They take the result of other conditions as inputs
+and perform a logical "and", "or", or "not" of the results.
+They can be combined and chained as needed.
+
+[[logical-and]]
+==== "And" condition
+
+.Pipeline
+[pipeline]
+----
+// Declarative //
+stage ('Example') {
+    when {
+        expression { A && B }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (A && B) {
+        echo 'Example step.' // <1>
+    }
+}
+----
+<1> This step will execute when both A and B return true.
+
+
+[[logical-or]]
+==== "Or" condition
+
+.Pipeline
+[pipeline]
+----
+// Declarative //
+stage ('Example') {
+    when {
+        expression { A || B }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (A || B) {
+        echo 'Example step.' // <1>
+    }
+}
+----
+<1> This step will execute when A or B return true.
+
+[[logical-not]]
+==== "Not" condition
+
+.Pipeline
+[pipeline]
+----
+// Declarative //
+stage ('Example') {
+    when {
+        expression { !A }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (!A) {
+        echo 'Example step.' // <1>
+    }
+}
+----
+<1> This step will execute when A is not true.
+
+[[logical-examples]]
+==== Examples: Combining Conditions
+
+.Pipeline
+[pipeline]
+----
+// Declarative //
+stage ('Example') {
+    when {
+        expression { !A }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (!A) {
+        echo 'Example step.' // <1>
+    }
+}
+----
+<1> This step will execute when A is not true.
+
+// TODO: Here's where I stopped.
+
+=== Build Cause
+
+Run if the current build has a specific cause (e.g triggered by SCM or timer).
+
+.Pipeline
+[source,groovy]
+----
+// https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/get-build-cause/getBuildCause.groovy
+if () { /* step */ }
+----
+
+=== Current build status
+
+Run if the current build status is within the configured range.
+
+This condition will run the build step when the current build status is equal to, or better than the Worst status and is equal to or worse than the Best status.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Day of the Week
+
+Only run on specific days of the week.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Execute Shell
+
+Runs a shell script (defaults to sh, uses same configuration as shell build step) for checking the condition. The script will be run with the workspace as the current directory.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Execute Windows Batch
+
+Runs a Windows batch script for checking the condition The script will be run with the workspace as the current directory.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Execution node
+
+Run only on selected nodes.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== File exists
+
+Run if the file exists.
+The file is expanded using the Token Macro Plugin.
+If the file is relative, then it is relative to the Base directory.
+If the file is absolute, then it will be tested on the Node that contains the Base directory (the master for $JENKINS_HOME and Artifacts dir).
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Files match
+
+Run if one or more files match the selectors.
+Separate multiple includes or excludes patterns with a comma. e.g. Includes "target/site/**/*.html,target/site/images/" Excludes "**/*.gif"
+If no includes pattern is configured, then the pattern "**" will be used, which matches all files in the directory and all sub directories.
+The includes and excludes are Ant Patterns.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Numerical comparison
+
+Run if the numerical comparison is true.
+The Left hand side and the Right hand side will be expanded with the Token Macro Plugin.
+Both arguments must evaluate to a number.
+Check out the tokens provided by the Static Code Analysis Plugins for some awesome conditional execution options.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Regular expression match
+Run if the Expression matches the Label.
+Both the Expression and the Label will be expanded with the Token Macro Plugin.
+The Expression is a regular expression using the Java syntax.
+
+////
+Examples:
+
+Parameterized publishing similar to the Publish Over family of publishers.
+Select "This build is parameterized" from the top of the job configuration, and add a String parameter
+Enter ${ENV,var="PARAMETER_NAME"} as the Expression
+Give the publisher a Label e.g. UAT or RELEASE
+Trigger a build passing in a regular expression as the value of PARAMETER_NAME e.g. INT|UAT
+Use a fixed regular expression to match against a property value in a property file that is generated during the build.
+////
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Strings match
+
+Run if the two strings are the same.
+Both of the strings will be expanded with the Token Macro Plugin.
+The match can me made case insensitive by checking the box.
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----
+
+=== Time
+
+Only run during a certain period of the day.
+The time is entered in 24 hour format, e.g. 5:03, 09:00, 22:45.
+The time zone is the time zone set on the Jenkins master.
+The time resolution is 1 minute, and the start minute and end minute are included in the range. i.e. 00:00 to 23:59 would match the whole day
+
+
+.Pipeline
+[source,groovy]
+----
+if () { /* step */ }
+----

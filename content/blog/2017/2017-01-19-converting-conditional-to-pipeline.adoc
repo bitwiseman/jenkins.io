@@ -502,11 +502,19 @@ and showed a couple concrete examples.  Overall, I'm pleased with the results so
 I found scenarios which could not easily be migrated to Pipeline, but even those
 are only more difficult, rather than impossible.
 
-The next thing to do is add a section to the
-link:https://jenkins.io/doc/book/[Jenkins Handbook] documenting the Pipeline
-equivalent of all of the Conditions and the most commonly used Tokens.
-Look for it soon!
+*UPDATE*:
+I've added a
+"link:/doc/book/appendix/converting-conditional-buildstep-to-pipeline[Converting Conditional Build Steps to Pipeline]"
+section to the
+link:/doc/book/[Jenkins Handbook] which describes every the Condition.
+I've described a few more Condition Pipeline equivalents,
+and added notes on where to find information about the remaining ones.
+I've also started a
+"link:/doc/book/appendix/converting-tokens-to-pipeline[Converting Tokens to Pipeline]" section.
+
+Take a look!
 
 == Links
 
 * link:https://plugins.jenkins.io/conditional-buildstep[Conditional BuildStep plugin]
+* link:/doc/book/appendix/converting-conditional-buildstep-to-pipeline[Converting Conditional Build Steps to Pipeline]

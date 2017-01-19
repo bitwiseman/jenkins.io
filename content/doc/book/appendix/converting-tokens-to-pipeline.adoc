@@ -1,0 +1,137 @@
+---
+layout: section
+---
+:notitle:
+:description:
+:author:
+:email: jenkinsci-docs@googlegroups.com
+:sectanchors:
+:toc:
+:hide-uri-scheme:
+
+[NOTE]
+====
+This is still very much a work in progress.
+====
+
+
+= Converting Token Macros
+
+// TODO: Consider adding a folder to the https://github.com/jenkinsci/pipeline-examples
+// called token-examples to focus various ways to replace specific tokens.
+// Otherwise, this document will become that.
+// However, having them checked-in here will make for answers
+// with higher quality and stablity.
+
+
+== Build Parameters
+
+== Environment Variable Reference
+
+== Token Expansion Operations
+
+////
+For documentation:
+In addition to the tokens, you can modify the result of the token expansion
+using parameter expansions.
+They follow similar rules as bash Parameter Expansions.
+The supported expansions are: ${#TOKEN} which resolves to the
+length of the expanded token value, ${TOKEN:offset:length} which
+takes a substring of the token result (length is optional and offset
+ and length can both be negative), ${TOKEN#pattern} which matches the pattern against the start of the expanded token and removes it if it, ${TOKEN%pattern} which matches the pattern against the end of the expanded token and removes it it if matches.
+////
+
+== Token Macro Reference (Alphabetical)
+
+Token Macros differ from other types as they are not limited to simple variables that contain values.
+They behave more like like functions calls, with required and/or optional parameters,
+which return different results depending parameters passed.
+
+[[FILE]]
+=== FILE
+
+*Required Parameters*: _path_
+
+*Expands to the contents of a file. The file path is relative to the build workspace root.*
+
+This token maps directly to the `readFile` step.
+The only difference is the file path for `readFile` is relative to the
+current working directory on the agent, but that is the workspace root by default.
+No problem.
+
+.Pipeline
+[source, groovy]
+----
+// ${FILE, path="pom.xml"}
+FILE  = readFile('pom.xml')
+----
+
+[[GIT_BRANCH]]
+=== GIT_BRANCH
+
+*Optional Parameters*:
+<<GIT_BRANCH_all,_all_>>,
+<<GIT_BRANCH_fullName,_fullName_>>.
+
+*Expands to the name of the branch that was built.*
+
+This information may or may not be exposed in Pipeline.  If you're using the
+link:https://plugins.jenkins.io/workflow-multibranch[Pipeline Multibranch plugin]
+`env.BRANCH_NAME` will give similar basic information, but doesn't offer the parameters.
+There are also
+link:https://issues.jenkins-ci.org/browse/JENKINS-35230[several]
+link:https://issues.jenkins-ci.org/browse/JENKINS-24141[issues]
+filed around `GIT_*` tokens in Pipeline.
+Until they are addressed fully, we can follow the pattern shown in
+link:https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/gitcommit/gitcommit.groovy[pipeline-examples],
+executing a shell to get the information we need.
+
+
+.Pipeline
+[source, groovy]
+----
+GIT_BRANCH = sh(
+          returnStdout: true,
+          script: 'git rev-parse --abbrev-ref HEAD'
+      ).trim()
+----
+
+[[GIT_BRANCH_all]]
+==== Option: _all_
+// TODO: description
+// TODO: discussion
+
+.Pipeline
+[source, groovy]
+----
+// TODO example
+----
+
+[[GIT_BRANCH_fullName]]
+==== Option: _fullName_
+// TODO: description
+// TODO: discussion
+
+.Pipeline
+[source, groovy]
+----
+// TODO example
+----
+
+
+
+[[CHANGES_SINCE_LAST_SUCCESS]]
+=== CHANGES_SINCE_LAST_SUCCESS
+
+*Displays the changes since the last successful build.*
+
+*Parameters*:
+_reverse_, _format_, _changesFormat_, _showPaths_, _pathFormat_,
+_showDependencies_, _dateFormat_, _regex_, _replace_, _default_.
+
+Not only is the information provided by this token not exposed in Pipeline,
+the token has ten optional parameters, including format strings and regular expression
+searches. There are a number of ways we might get similar information in Pipeline.
+Each have their own particular limitations and ways they differ from the token output.
+Then we'll need to consider how each of the parameters changes the output.
+If nothing else, translating this token is clearly beyond the scope of this post.
