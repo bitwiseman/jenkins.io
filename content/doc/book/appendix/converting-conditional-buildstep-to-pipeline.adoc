@@ -241,34 +241,157 @@ stage ('Example') {
 ----
 <1> This step will execute when A is not true.
 
-// TODO: Here's where I stopped.
-
 === Build Cause
 
-Run if the current build has a specific cause (e.g triggered by SCM or timer).
+Runs steps if the current build has a specific cause (e.g triggered by SCM or timer).
+Has an "Exclusive Cause" option that run steps only the current has only one specific cause.
+The list of cause types can be extended by plugins.
+
+This solution is based on code from the
+link:https://jenkins.io/doc/pipeline/examples/#get-build-cause[pipeline examples],
+which uses `currentBuild.rawBuild`.
+If you see errors regarding 'Scripts not permitted to use method...' approve
+these scripts at JENKINS_URL/scriptApproval/ - the UI shows the blocked methods
+
+[IMPORTANT]
+====
+Using `currentBuild.rawBuild` has security risks.
+
+link:https://issues.jenkins-ci.org/browse/JENKINS-41272[JENKINS-41272] has been filed
+requesting causes be exposed on `currentBuild`.
+====
 
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-// https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/get-build-cause/getBuildCause.groovy
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression {
+            expectedCauseType = hudson.model.Cause$UserIdCause // <1>
+            return currentBuild.rawBuild.getCause(expectedCauseType) != null // <2>
+        }
+    }
+    steps {
+        echo 'Example step.' // <3>
+    }
+}
+stage ('Example-Exclusive-Cause') {
+    when {
+        expression {
+            expectedCauseType = hudson.model.Cause$UserIdCause // <1>
+            buildCauses = currentBuild.rawBuild.getCauses() // <4>
+            return buildCauses.size() == 1 &&
+                buildCauses.get(0) instanceof expectedCauseType // <5>
+        }
+    }
+    steps {
+        echo 'Example step.' // <6>
+    }
+}
+// Script //
+stage ('Example') {
+    expectedCauseType = hudson.model.Cause$UserIdCause // <1>
+    if (currentBuild.rawBuild.getCause(expectedCauseType) != null) { // <2>
+        echo 'Example step.' // <3>
+    }
+}
+stage ('Example-Exclusive-Cause') {
+    expectedCauseType = hudson.model.Cause$UserIdCause // <1>
+    buildCauses = currentBuild.rawBuild.getCauses() // <4>
+    if (buildCauses.size() == 1 &&
+        buildCauses.get(0) instanceof expectedCauseType) { // <5>
+        echo 'Example step.' // <6>
+    }
+}
 ----
+<1> Example build cause type.  See list below for map of names to types.
+<2> Get the first build cause of the specified type and check that it is not `null`
+(`null` is the value returned when none of that type are found).
+<3> This step will execute when at least one build cause matches the expected type.
+<4> Get the full list of causes for the current build.
+<5> Check if there is only one cause for the current build and that it matches the expected type.
+<6> This step will execute when there is only one build cause and it matches the expected type.
+
+*Known `Cause` types*:
+
+* BuildResultTrigger -
+link:http://javadoc.jenkins.io/plugin/buildresult-trigger/org/jenkinsci/plugins/buildresulttrigger/BuildResultTriggerCause.html[`org.jenkinsci.plugins.buildresulttrigger.BuildResultTriggerCause`],
+* CLICause -
+link:http://javadoc.jenkins-ci.org/hudson/cli/BuildCommand.CLICause.html[`hudson.cli.BuildCommand$CLICause`]
+* FSTrigger -
+link:http://javadoc.jenkins-ci.org/fstrigger/org/jenkinsci/plugins/fstrigger/FSTriggerCause.html[`org.jenkinsci.plugins.fstrigger.FSTriggerCause`],
+* IvyTrigger -
+link:http://javadoc.jenkins-ci.org/ivytrigger/org/jenkinsci/plugins/ivytrigger/IvyTriggerCause.html[`org.jenkinsci.plugins.ivytrigger.IvyTriggerCause`],
+* LegacyCodeCause -
+link:http://javadoc.jenkins-ci.org/hudson/model/Cause.LegacyCodeCause.html[`hudson.model.Cause$LegacyCodeCause`] _(Deprecated since 2009-02-08)_
+* RemoteCause -
+link:http://javadoc.jenkins-ci.org/hudson/model/Cause.RemoteCause.html[`hudson.model.Cause$RemoteCause`]
+* SCMTrigger -
+link:http://javadoc.jenkins-ci.org/hudson/triggers/SCMTrigger.SCMTriggerCause.html[`hudson.triggers.SCMTrigger$SCMTriggerCause`],
+* ScriptTrigger -
+link:http://javadoc.jenkins-ci.org/scripttrigger/org/jenkinsci/plugins/scripttrigger/ScriptTriggerCause.html[`org.jenkinsci.plugins.scripttrigger.ScriptTriggerCause`],
+* TimerTrigger -
+link:http://javadoc.jenkins-ci.org/hudson/triggers/TimerTrigger.TimerTriggerCause.html[`hudson.triggers.TimerTrigger$TimerTriggerCause`],
+* UpstreamCause -
+link:http://javadoc.jenkins-ci.org/hudson/model/Cause.UpstreamCause.html[`hudson.model.Cause$UpstreamCause`]
+* UserIdCause -
+link:http://javadoc.jenkins-ci.org/hudson/model/Cause.UserIdCause.html[`hudson.model.Cause$UserIdCause`]
+* URLTrigger -
+link:http://javadoc.jenkins-ci.org/urltrigger/org/jenkinsci/plugins/urltrigger/URLTriggerCause.html[`org.jenkinsci.plugins.urltrigger.URLTriggerCause`],
+* UserCause -
+link:http://javadoc.jenkins-ci.org/hudson/model/Cause.UserCause.html[`hudson.model.Cause$UserCause`] _(Deprecated: use "UserIdCause")_
+* UserIdCause -
+link:http://javadoc.jenkins-ci.org/hudson/model/Cause.UserIdCause.html[`hudson.model.Cause$UserIdCause`]
+
 
 === Current build status
 
 Run if the current build status is within the configured range.
 
-This condition will run the build step when the current build status is equal to, or better than the Worst status and is equal to or worse than the Best status.
+This condition will run the build step when the current build status is
+equal to, or better than the "Worst status" and
+is equal to or worse than the "Best status".
+
+In Pipeline this value is accessed via `currentBuild.result`,
+but the underlying values are the same.  The values and ordering are defined by the
+link:http://javadoc.jenkins.io/hudson/model/Result.html[hudson.model.Result] class.
+
+Result Values (best to worst): `SUCCESS`, `UNSTABLE`, `FAILURE`, `NOT_BUILT`, and `ABORTED`.
+
+// TODO: Determine how to implement isBetterOrEqualTo and isWorseOrEqualTo
+// for this example
+// Related: https://issues.jenkins-ci.org/browse/JENKINS-41275
 
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
-=== Day of the Week
+
+=== Day of week
 
 Only run on specific days of the week.
+
+Parameter: Days - Weekdays, Weekends, Select Days (Mon,Tue,Wed,Thu,Fri,Sat,Sun)
+
+Option: "Use build time"
 
 .Pipeline
 [source,groovy]
@@ -278,7 +401,10 @@ if () { /* step */ }
 
 === Execute Shell
 
-Runs a shell script (defaults to sh, uses same configuration as shell build step) for checking the condition. The script will be run with the workspace as the current directory.
+Runs a shell script (defaults to sh, uses same configuration as shell build step)
+for checking the condition.
+
+The script will be run with the workspace as the current directory.
 
 .Pipeline
 [source,groovy]
@@ -288,7 +414,9 @@ if () { /* step */ }
 
 === Execute Windows Batch
 
-Runs a Windows batch script for checking the condition The script will be run with the workspace as the current directory.
+Runs a Windows batch script for checking the condition.
+
+The script will be run with the workspace as the current directory.
 
 .Pipeline
 [source,groovy]
