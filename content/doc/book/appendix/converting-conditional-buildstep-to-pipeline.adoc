@@ -16,13 +16,21 @@ Bascially, all the conditions map to `if/else` statements in Scripted Pipeline o
 `stage/when` in Declarative Pipeline.
 Some are more complex than others.
 
+
+Many conditions  support Token Macro expansion of inputs.
+There is a separate page that discusses
+link:./converting-tokens-to-pipeline.adoc[converting tokens to pipeline].
+
+
+== Special Considerations
+
 Scripted pipeline and Declarative differ significantly in how they handle conditional behavior.
 It is worth discussing them separately.
 
-== Scripted Pipeline
+=== Scripted Pipeline
 
+=== Declarative Pipeline
 
-== Declarative Pipeline
 
 
 
@@ -101,8 +109,8 @@ Truth is a case-insensitive match of one of the following:
 
 [NOTE]
 ====
-Pipeline can duplicate these, but depending on the scenario consider
-whether a simpler expression would suffice.
+Pipeline can duplicate these, but depending on the scenario,
+consider whether a simpler expression would suffice.
 ====
 
 .Pipeline
@@ -219,6 +227,12 @@ stage ('Example') {
 
 [[logical-examples]]
 ==== Examples: Combining Conditions
+
+[NOTE]
+====
+This example is not written yet.
+====
+
 
 .Pipeline
 [pipeline]
@@ -347,6 +361,14 @@ link:http://javadoc.jenkins-ci.org/hudson/model/Cause.UserIdCause.html[`hudson.m
 
 === Current build status
 
+[NOTE]
+====
+This condition has not been translated yet.
+
+The source is available on GitHub in
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/core/StatusCondition.java[StatusCondition.java]
+====
+
 Run if the current build status is within the configured range.
 
 This condition will run the build step when the current build status is
@@ -356,6 +378,7 @@ is equal to or worse than the "Best status".
 In Pipeline this value is accessed via `currentBuild.result`,
 but the underlying values are the same.  The values and ordering are defined by the
 link:http://javadoc.jenkins.io/hudson/model/Result.html[hudson.model.Result] class.
+However, `currentBuild.result` is not always set.
 
 Result Values (best to worst): `SUCCESS`, `UNSTABLE`, `FAILURE`, `NOT_BUILT`, and `ABORTED`.
 
@@ -387,6 +410,14 @@ stage ('Example') {
 
 === Day of week
 
+[NOTE]
+====
+This condition has not been translated yet.
+
+The source is available on GitHub in
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/core/DayCondition.java[DayCondition.Java]
+====
+
 Only run on specific days of the week.
 
 Parameter: Days - Weekdays, Weekends, Select Days (Mon,Tue,Wed,Thu,Fri,Sat,Sun)
@@ -394,47 +425,145 @@ Parameter: Days - Weekdays, Weekends, Select Days (Mon,Tue,Wed,Thu,Fri,Sat,Sun)
 Option: "Use build time"
 
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === Execute Shell
+
+[NOTE]
+====
+This condition has not been translated yet.
+
+The source is available on GitHub in
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/contributed/ShellCondition.java[ShellCondition.java]
+and
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/contributed/CommandInterperterCondition.java[CommandInterperterCondition.java]
+====
 
 Runs a shell script (defaults to sh, uses same configuration as shell build step)
 for checking the condition.
 
 The script will be run with the workspace as the current directory.
 
+
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === Execute Windows Batch
+
+[NOTE]
+====
+This condition has not been translated yet.
+
+The source is available on GitHub in
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/contributed/BatchFileCondition.java[BatchFileCondition.java]
+and
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/contributed/CommandInterperterCondition.java[CommandInterperterCondition.java]
+====
 
 Runs a Windows batch script for checking the condition.
 
 The script will be run with the workspace as the current directory.
 
+
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === Execution node
 
+[NOTE]
+====
+This condition has not been translated yet.
+
+The source is available on GitHub in
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/core/NodeCondition.java[NodeCondition.java]
+====
+
 Run only on selected nodes.
 
+
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === File exists
+
+[NOTE]
+====
+This condition has not been translated yet.
+====
+
+// TODO: use the fileExists() step
 
 Run if the file exists.
 The file is expanded using the Token Macro Plugin.
@@ -442,81 +571,213 @@ If the file is relative, then it is relative to the Base directory.
 If the file is absolute, then it will be tested on the Node that contains the Base directory (the master for $JENKINS_HOME and Artifacts dir).
 
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === Files match
+
+[NOTE]
+====
+This condition has not been translated yet.
+
+This like file exists but checks for directory an then uses a pattern not a specific file.
+
+The source is available on GitHub in
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/core/FilesMatchCondition.java[FilesMatchCondition.java]
+====
 
 Run if one or more files match the selectors.
 Separate multiple includes or excludes patterns with a comma. e.g. Includes "target/site/**/*.html,target/site/images/" Excludes "**/*.gif"
 If no includes pattern is configured, then the pattern "**" will be used, which matches all files in the directory and all sub directories.
 The includes and excludes are Ant Patterns.
 
+
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === Numerical comparison
+
+[NOTE]
+====
+This condition has not been translated yet.
+====
+
+// TODO: Convert to integer and ==
 
 Run if the numerical comparison is true.
 The Left hand side and the Right hand side will be expanded with the Token Macro Plugin.
 Both arguments must evaluate to a number.
 Check out the tokens provided by the Static Code Analysis Plugins for some awesome conditional execution options.
 
+
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === Regular expression match
-Run if the Expression matches the Label.
+
+[NOTE]
+====
+This condition has not been translated yet.
+====
+
+// TODO: See Boolean condition.
+
+
+Runs if the Expression matches the Label.
 Both the Expression and the Label will be expanded with the Token Macro Plugin.
 The Expression is a regular expression using the Java syntax.
 
-////
-Examples:
-
-Parameterized publishing similar to the Publish Over family of publishers.
-Select "This build is parameterized" from the top of the job configuration, and add a String parameter
-Enter ${ENV,var="PARAMETER_NAME"} as the Expression
-Give the publisher a Label e.g. UAT or RELEASE
-Trigger a build passing in a regular expression as the value of PARAMETER_NAME e.g. INT|UAT
-Use a fixed regular expression to match against a property value in a property file that is generated during the build.
-////
 
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
 
 === Strings match
 
+[NOTE]
+====
+This condition has not been translated yet.
+====
+
 Run if the two strings are the same.
-Both of the strings will be expanded with the Token Macro Plugin.
 The match can me made case insensitive by checking the box.
 
+There are several complications to consider when converting this condition to Pipeline.
+First, the condition expands the Tokens in both of the strings,
+which is not be possible in the Pipeline code.
+Second, Groovy, allows variables to be `null`,
+which will require special checking.
+Finally, Groovy supports two distinct types of strings,
+String and GString, which may require additional checks.
+
+Instead, any tokens in the strings will need to be translated to Pipeline,
+and then the resulting strings compared.
+
+
+
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
+
 
 === Time
+
+[NOTE]
+====
+This condition has not been translated yet.
+The source is available on GitHub in
+link:https://github.com/jenkinsci/run-condition-plugin/blob/master/src/main/java/org/jenkins_ci/plugins/run_condition/core/TimeCondition.java[TimeCondition.java]
+====
 
 Only run during a certain period of the day.
 The time is entered in 24 hour format, e.g. 5:03, 09:00, 22:45.
 The time zone is the time zone set on the Jenkins master.
 The time resolution is 1 minute, and the start minute and end minute are included in the range. i.e. 00:00 to 23:59 would match the whole day
 
-
 .Pipeline
-[source,groovy]
+[pipeline]
 ----
-if () { /* step */ }
+// Declarative //
+stage ('Example') {
+    when {
+        expression { false }
+    }
+    steps {
+        echo 'Example step.' // <1>
+    }
+}
+// Script //
+stage ('Example') {
+    if (false)
+        echo 'Example step.' // <1>
+    }
+}
 ----
+<1> This step will never be executed.
