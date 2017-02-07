@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Declarative Pipeline: Publishing HTML Reports"
+title: "Declarative Pipeline for Maven Projects"
 tags:
 - tutorial
 - pipeline
 - declarative
-- plugins
-- ruby
+- maven
+- java
 author: lnewman
 ---
 
@@ -14,142 +14,270 @@ NOTE: This is a guest post by link:https://github.com/bitwiseman[Liam Newman],
 Technical Evangelist at link:https://cloudbees.com[CloudBees].
 
 
-Most projects need more that just JUnit result reporting.  Rather than writing a
-custom plugin for each type of report, we can use the
-link:https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin[HTML Publisher Plugin].
+== Declare Your Pipelines!
 
-=== Let's Make This Quick
+Jenkin Declarative Pipeline 1.0 is here!
+It is now included automatically with J
 
-I've found a Ruby project,
-link:https://github.com/reiseburo/hermann[hermann], I'd like to build using Jenkins Pipeline. I'd
-also like to have the code coverage results published with each build job.  I could
-write a plugin to publish this data, but I'm in a bit of hurry and
-the build already creates an HTML report file using link:https://github.com/colszowka/simplecov[SimpleCov]
-when the unit tests run.
+This is first in a series of blog posts that will showing how key features of
+Declarative Pipeline and how to use them.
+For several of these, I'll be revisiting my previous series of posts on using with various plugins
+with (Scripted) Pipline,
+and comparing how those are implemented in Declarative Pipeline.
 
-=== Simple Build
-I'm going to use the
-link:https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin[HTML Publisher Plugin]
-to add the HTML-formatted code coverage report to my builds.  Here's a simple
-pipeline for building the link:https://github.com/reiseburo/hermann[hermann]
-project.
+To start though, let's get familiar with the basic structure of a Declarative Pipeline
+using a simple pipeline for a basic Maven-based Jave project -
+the Jenkins JUnit plugin.
+We'll create a minimal Declarative Pipeline,
+add the configuration needed to use Maven and the JDK,
+and finally run Maven to build the plugin.
 
-[source,groovy]
+== Setup
+
+With Declarative, it is still possible to run Pipelines edited directly in the Jenkis web UI,
+but one of the key features of "Pipeline as Code" is checking-in and being able to track changes.
+For this post, I'm going to use the `blog/add-declarative-pipeline` branch of my fork of the JUnit plugin.
+I'm going to setup a Multi-branch Pipeline and point it at my repository.
+
+// TODO Image of the Multi-branch configuration
+
+I've also set this pipeline's git client to automatically "clean after checkout"
+and to only keep the ten most recent runs.
+
+== Writing a Minimal Pipeline
+
+As has been said before,
+Declarative Pipeline provides a more structured, "opinionated" way to create pipelines.
+
+I'm going to start by adding a minimal Declarative Pipeline to my branch.
+Below is a minimal Pipeline (with annotations) that just prints a message:
+
+[pipeline]
 ----
-stage 'Build'
-
-node {
-  // Checkout
-  checkout scm
-
-  // install required bundles
-  sh 'bundle install'
-
-  // build and run tests with coverage
-  sh 'bundle exec rake build spec'
-
-  // Archive the built artifacts
-  archive (includes: 'pkg/*.gem')
+// Declarative //
+pipeline { // <1>
+    agent any // <2> <3>
+    stages { // <4>
+        stage('Build') { // <5>
+            steps { // <6>
+               echo 'This is a minimal pipeline.' // <7>
+            }
+        }
+    }
+}
+// Scripted //
+node { // <2>
+    checkout scm // <3>
+    stage ('Build') { // <4>
+        echo 'This is a minimal pipeline.' // <6>
+    }
 }
 ----
+<1> All Declarative Pipelines start with a `pipeline` section.
+<2> Select where to run this Pipeline, in this case "any" agent regardless of label.
+<3> Declarative automatically does`checkout scm` on the agent,
+whereas this must by done explicitly in Scripted Pipeline.
+<4> A minimal Declarative Pipeline is defined a series of stages.
+<5> Run the "Build" stage.
+<6> Each stage in a Declarative Pipeline runs a series of steps.
+<7> Run the `echo` step to print a message in the log.
 
-[NOTE]
-====
-This pipeline expects to be run from a `Jenkinsfile` in SCM.
-To copy and paste it directly into a Jenkins Pipeline job, replace the `checkout scm` step with
-`git 'https://github.com/reiseburo/hermann.git'`.
-====
+NOTE: If you are familiar with Scripted Pipeline, you can expand the above
+Declarative code sample to show the Scripted equivalent.
 
-Simple enough, it builds, runs tests, and archives the package.
+Once I add above Pipeline to my `Jenkinsfile` and run "Branch Indexing",
+my Jenkins will pick it up and run run it.
 
-'''
+// TODO: Image of completed run
 
-image::/images/post-images/2016-06-30/run-1.png[Job Run Without Report Link, role="center"]
-
-'''
-
-Now I just need to add the step to publish the code coverage report.
-I know that `rake spec` creates an `index.html` file in the `coverage` directory.
-I've already installed the
-link:https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin[HTML Publisher Plugin].
-How do I add the HTML publishing step to the pipeline?  The plugin page doesn't
-say anything about it.
-
-=== Snippet Generator to the Rescue
-Documentation is hard to maintain and easy to miss, even more so in a system
-like Jenkins with hundreds of plugins the each potential have one or more
-groovy fixtures to add to the Pipeline.  The Pipeline Syntax
-link:/blog/2016/05/31/pipeline-snippetizer/["Snippet Generator"] helps users
-navigate this jungle by providing a way to generate a code snippet for any step using
-provided inputs.
-
-It offers a dynamically generated list of steps, based on the installed plugins.
-From that list I select the `publishHTML` step:
-
-'''
-
-image::/images/post-images/2016-06-30/snippet-generator-1.png[Snippet Generator Menu, role="center"]
-
-'''
-
-Then it shows me a UI similar to the one used in job configuration.  I fill in
-the fields, click "generate", and it shows me snippet of groovy generated from
-that input.
-
-'''
-
-image::/images/post-images/2016-06-30/snippet-generator-2.png[Snippet Generator Output, role="center"]
-
-
-=== HTML Published
-I can use that snippet directly or as a template for further customization.
-In this case, I'll just reformat and copy it in at the end of my
-pipeline.  (I ran into a link:https://issues.jenkins-ci.org/browse/JENKINS-29711[minor bug]
-in the snippet generated for this plugin step. Typing
-error string in my search bar immediately found the bug and a workaround.)
-
-[source,groovy]
+.Log Output
+[source]
 ----
-  /* ...unchanged... */
+[Pipeline] node
+Running on osx_mbp in /Users/bitwiseman/jenkins/agents/osx_mbp/workspace/blog_add-declarative-pipeline
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Cloning the remote Git repository
+{ ... truncated 20 lines ... }
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] echo
+This is a minimal pipeline
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+----
 
-  // Archive the built artifacts
-  archive (includes: 'pkg/*.gem')
+Declarative Pipeline code  may be little more verbose than the equivalent Scripted Pipeline,
+but the added detail gives a clearer, more consistent view of what each Pipeline is supposed to to do.
+It also gives us a structure into which we can add more configuration details about this pipeline.
 
-  // publish html
-  // snippet generator doesn't include "target:"
-  // https://issues.jenkins-ci.org/browse/JENKINS-29711.
-  publishHTML (target: [
-      allowMissing: false,
-      alwaysLinkToLastBuild: false,
-      keepAll: true,
-      reportDir: 'coverage',
-      reportFiles: 'index.html',
-      reportName: "RCov Report"
-    ])
+== Adding Tools to Pipeline
 
+The next thing we'll add in this Pipeline is a `tools` section to let us use Maven in this pipeline.
+The `tools` section is one of several sections we can add under `pipeline`
+that set configuration for the rest of the pipeline.
+(We'll look at the others in including `agent` in a later post.)
+Each tool entry will make whatever settings changes,
+such as updating `PATH` or other environment variables,
+to make the named tool available in the current pipeline.
+It will also automatically install the named tool if that tool is configured to do so
+under "Managing Jenkins" -> "Global Tool Configuration".
+
+
+.Jenkinsfile
+[pipeline]
+----
+// Declarative
+pipeline {
+    agent any
+    tools { // <1>
+        maven 'Maven 3.3.9' // <2>
+        jdk 'jdk8' // <3>
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' // <4>
+            }
+        }
+
+        stage ('Build') {
+            steps {
+                echo 'This is a minimal pipeline.'
+            }
+        }
+    }
 }
+// Scripted Not Defined
+----
+<1> `tools` section for adding tool settings.
+<2> Configure this pipeline to use the Maven version matching "Maven 3.3.9"
+(configured in "Managing Jenkins" -> "Global Tool Configuration").
+<3> Configure this pipeline to use the Maven version matching "jdk8"
+(configured in "Managing Jenkins" -> "Global Tool Configuration").
+<4> These will show the changes to `PATH` and `M2_HOME`.
+
+
+When we run this updated pipeline the same way we did the first we see that the
+Declarative Pipeline has added another stage called "Declarative: Tool Install":
+
+//TODO Add image of stage view
+
+In the log output, we see that "Meven 3.3.9" gets installed,
+and the `PATH` and `M2_HOME` environment variables are set:
+
+.Log Output
+[source]
+----
+{ ... truncated lines ... }
+[Pipeline] { (Declarative: Tool Install)
+[Pipeline] tool
+Unpacking https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.3.9/apache-maven-3.3.9-bin.zip
+to /Users/bitwiseman/jenkins/agents/osx_mbp/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.9
+on osx_mbp
+{ ... }
+PATH = /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin:/Users/bitwiseman/jenkins/agents/osx_mbp/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.9/bin:...
+M2_HOME = /Users/bitwiseman/jenkins/agents/osx_mbp/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.9
+{ ... }
 ----
 
-When I run this new pipeline I am rewarded with an `RCov Report` link on left side,
-which I can follow to show the HTML report.
 
-'''
+== Running a Maven Build
 
-image::/images/post-images/2016-06-30/run-2.png[Job Run With Report Link, role="center"]
+Finally, running a Maven build is trival.
+The `tools` section already added Maven and JDK8 to the `PATH`,
+all we need to do is call `mvn install`.
+It would be nice if I could split the build and the testing into separate stages,
+but Maven is famous for not liking when people do that.
+I'll leave it alone for now.
 
-'''
 
-image::/images/post-images/2016-06-30/rcov.png[RCov Report, role="center"]
+.Jenkinsfile
+[pipeline]
+----
+// Declarative
+pipeline {
+    agent any
+    tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                '''
+            }
+        }
 
-'''
+        stage ('Build') {
+            steps {
+                sh 'mvn install' // <1>
+            }
+        }
+    }
+}
+// Scripted Not Defined
+----
+<1> Call `mvn`, the version configured by the `tools` section will be first on the path.
 
-I even added the `keepAll` setting to let I can also go back an look at reports on old jobs as
-more come in.  As I said to to begin with, this is not as slick as what I
-could do with a custom plugin, but it is much easier and works with any static
-HTML.
+Below are the Stage view and a sample of log output for this last revision:
+
+// TODO Add stage view image
+
+
+.Log Output
+[source]
+----
+{ ... truncated lines ... }
++ mvn install
+[INFO] Scanning for projects...
+[WARNING] The POM for org.jenkins-ci.tools:maven-hpi-plugin:jar:1.119 is missing, no dependency information available
+[WARNING] Failed to build parent project for org.jenkins-ci.plugins:junit:hpi:1.20-SNAPSHOT
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JUnit Plugin 1.20-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-hpi-plugin:1.119:validate (default-validate) @ junit ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.3.1:display-info (display-info) @ junit ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_92 normalized as: 1.8.0-92
+[INFO] OS Info: Arch: x86_64 Family: mac Name: mac os x Version: 10.12.3
+[INFO]
+{ ... }
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:25 min
+[INFO] Finished at: 2017-02-06T22:43:41-08:00
+[INFO] Final Memory: 84M/1265M
+[INFO] ------------------------------------------------------------------------
+----
+
+
+== Conclusion
+This new Declarative syntax is a significant step forward for Jenkins Pipeline.
+It trades some added some verbosity and constraints for much greater clarity and maintainability.
+In the coming weeks, I'll be adding new post every few days demonstrating various
+features of the Declarative syntax and recent Jenkins Pipeline.
 
 
 === Links
 
-* link:https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin[HTML Publisher Plugin]
-* link:/blog/2016/05/31/pipeline-snippetizer/[Jenkins Pipeline Snippet Generator]
+* link
+* link
