@@ -40,14 +40,6 @@ Blue Ocean reduces clutter and increases clarity for every member of your team.
 
 To start using Blue Ocean, see <<<blueocean/getting-started#,Getting Started with Blue Ocean>>.
 
-++++
-<center>
-<iframe width="853" height="480"
-src="https://www.youtube-nocookie.com/embed/mn61VFdScuk?rel=0" frameborder="0"
-allowfullscreen></iframe>
-</center>
-++++
-
 == Join the community
 
 There a few ways you can join the community:
@@ -68,7 +60,6 @@ foundation to enable use cases that Jenkins hasn't handled before. The visualiza
 makes it easy to follow along the flow of your Pipeline and gives you clarity
 into your Continuous Delivery processes.
 
-// TODO: New image
 image:blueocean/successful-pipeline.png[Successful Pipeline, role=center]
 
 We know many developers spend a lot of time staring at logs in Jenkins. That’s
@@ -79,7 +70,6 @@ thousands or 100s of thousands of lines long.
 When you open the pipeline visualisation you can immediately identify what
 problem that are causing the Pipeline to fail.
 
-// TODO: New image
 image:blueocean/failing-pipeline.png[Successful Pipeline, role=center]
 
 
@@ -98,7 +88,6 @@ And when the developer creates a branch in Git, Blue Ocean will automatically
 favourite it for them. When the branch is deleted the Pipeline's branch is
 removed from view.
 
-// TODO: New image
 image:blueocean/personalized-dashboard.png[Personalized dashboard, role=center]
 
 === Branches and Pull Requests
@@ -107,7 +96,6 @@ Blue Ocean uses Jenkins Pipeline to discover new branches with `Jenkinsfile`s an
  runs them for you so that you are testing your Pipeline with every new feature
  branch that you create.
 
-// TODO: New image
 image:blueocean/pipeline-branches.png[Branches, role=center]
 
 If a developer opens a Pull Request against your repository, Jenkins will build it
@@ -115,7 +103,6 @@ using your Pipeline and update Github or Bitbucket with the status of the Pipeli
 This is extremely useful for reviewers of Pull Requests as successful Pipelines
 improve confidence that changes will integrate without causing havoc.
 
-// TODO: New image
 image:blueocean/github-pipeline-status.png[Github Pipeline status, role=center]
 
 
