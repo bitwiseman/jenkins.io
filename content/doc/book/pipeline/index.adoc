@@ -36,7 +36,7 @@ deployment.
 
 Pipeline provides an
 extensible set of tools for modeling simple-to-complex delivery pipelines "as
-code" via the <<pipeline/syntax#,Pipeline Domain Specific Language (DSL) syntax>>.
+code" via the <<./syntax#,Pipeline Domain Specific Language (DSL) syntax>>.
 footnoteref:[dsl,link:https://en.wikipedia.org/wiki/Domain-specific_language[Domain-Specific Language]]
 
 Typically, the definition of a Jenkins Pipeline is written into a text file
