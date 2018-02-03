@@ -134,7 +134,7 @@ about this in link:../../book/blueocean/getting-started[Getting started with
 Blue Ocean].
 ====
 
-include::doc/book/installing/_docker.adoc[]
+include::_docker.adoc[]
 
 
 === WAR file
@@ -356,4 +356,4 @@ BSD, Linux, and macOS distributions. Once Jenkins supports detecting ZFS
 capabilities, rather than relying on the `SunOS` check, the above caveats for
 ZFS integration with Jenkins should be considered.
 
-include::doc/book/installing/_setup-wizard.adoc[]
+include::_setup-wizard.adoc[]

@@ -27,7 +27,6 @@ user-site: prepare scripts/awestruct
 	./scripts/user-site-deploy.sh
 
 pdfs: prepare scripts/generate-handbook-pdf scripts/asciidoctor-pdf
-	./scripts/ruby scripts/generate-handbook-pdf $(BUILD_DIR)/user-handbook.adoc
 	./scripts/asciidoctor-pdf -a allow-uri-read \
 		--base-dir content \
 		--out-file user-handbook.pdf \
