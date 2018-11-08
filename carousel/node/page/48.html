@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Jenkins Community Blog
+</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="Jenkins is an open source automation server" name="description">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/sites/default/files/jenkins_favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/img/favicon.ico" rel="icon" sizes="32x32" type="img/png">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<meta content="Jenkins Community Blog" name="apple-mobile-web-app-title">
+<!-- Twitter Card data -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@JenkinsCI" name="twitter:site">
+<meta content="Jenkins Community Blog" name="twitter:title">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="twitter:description">
+<meta content="@JenkinsCI" name="twitter:creator">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<!-- Open Graph data -->
+<meta content="Jenkins Community Blog" property="og:title">
+<meta content="article" property="og:type">
+<meta content="https://bitwiseman.github.io/jenkins.io/carousel/node/page/48.html" property="og:url">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="og:description">
+<meta content="Jenkins Community Blog" property="og:site_name">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/assets/bower/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/assets/bower/tether/css/tether.min.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/css/font-icons.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/css/jenkins.css" media="screen" rel="stylesheet">
+<!-- Non-obtrusive CSS styles -->
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/assets/bower/ionicons/css/ionicons.min.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/css/footer.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/carousel/css/font-awesome.min.css" media="screen" rel="stylesheet">
+</head>
+<body>
+<script src="https://bitwiseman.github.io/jenkins.io/carousel/assets/bower/jquery/jquery.js"></script>
+<!-- starting partial toptoolbar.html.haml -->
+<nav class="navbar navbar-expand-md navbar-dark top bg-dark fixed-top" id="ji-toolbar">
+<a class="navbar-brand" href="https://bitwiseman.github.io/jenkins.io/carousel">
+Jenkins
+</a>
+<button class="navbar-toggler" data-target="#CollapsingNavbar" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="CollapsingNavbar">
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node">
+Blog
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Documentation
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/carousel/doc">
+Use Jenkins
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/carousel/doc/developer">
+Extend Jenkins
+</a>
+<span class="dropdown-item">
+<strong>
+Use-cases
+</strong>
+</span>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/android">
+&nbsp;-&nbsp;Android
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/c">
+&nbsp;-&nbsp;C/C++
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/docker">
+&nbsp;-&nbsp;Docker
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/embedded">
+&nbsp;-&nbsp;Embedded
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/github">
+&nbsp;-&nbsp;GitHub
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/java">
+&nbsp;-&nbsp;Java
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/php">
+&nbsp;-&nbsp;PHP
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/pipeline">
+&nbsp;-&nbsp;Continuous Delivery
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/python">
+&nbsp;-&nbsp;Python
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/ruby">
+&nbsp;-&nbsp;Ruby
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://plugins.jenkins.io/">
+Plugins
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Community
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/participate">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/chat" title="Chat with the rest of the Jenkins community on IRC">
+Chat
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/jam">
+Meet
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/events">
+Events
+</a>
+<a class="dropdown-item feature" href="https://issues.jenkins-ci.org/">
+Issue Tracker
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/mailing-lists" title="Browse Jenkins mailing list archives and/or subscribe to lists">
+Mailing Lists
+</a>
+<a class="dropdown-item feature" href="https://wiki.jenkins.io/">
+Wiki
+</a>
+<a class="dropdown-item feature" href="https://accounts.jenkins.io/" title="Create/manage your account for accessing wiki, issue tracker, etc">
+Account Management
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/sigs/">
+<strong>
+Special Interest Groups
+</strong>
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/sigs/chinese-localization/">
+&nbsp;-&nbsp;Chinese Localization
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/sigs/cloud-native/">
+&nbsp;-&nbsp;Cloud Native
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/sigs/gsoc/">
+&nbsp;-&nbsp;Google Summer of Code
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/sigs/pipeline-authoring/">
+&nbsp;-&nbsp;Pipeline Authoring
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/sigs/platform/">
+&nbsp;-&nbsp;Platform
+</a>
+</div>
+</li>
+<li class="dropdown nav-item">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Sub-projects</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/blueocean/">
+Blue Ocean
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/evergreen/">
+Evergreen
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/gsoc/">
+Google Summer of Code in Jenkins
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/infrastructure/">
+Infrastructure
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/jam/">
+Jenkins Area Meetups
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/jcasc/">
+Jenkins Configuration as Code
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/jenkins-x/">
+Jenkins X
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/carousel/projects/remoting/">
+Jenkins Remoting
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+About
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/carousel/security">
+Security
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/carousel/press">
+Press
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/carousel/awards">
+Awards
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/carousel/project/conduct">
+Conduct
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/carousel/artwork">
+Artwork
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-outline-secondary" href="https://bitwiseman.github.io/jenkins.io/carousel/download">
+Download
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Spacing to make the fixed-top sticky navbar not occlude any content below it -->
+<div class="pt-4">
+&nbsp;
+</div>
+
+<!-- ending partial toptoolbar.html.haml -->
+<div class="container blog-post">
+<div class="row body">
+<div class="col-md-8 main-content with-sidebar" id="content">
+<div id="content-top">
+<h2>
+Jenkins Community Blog
+</h2>
+</div>
+<div class="blogintro">
+The Jenkins project has a lot going on between core/plugin development,
+events and other open source automation related activities. To keep up with
+it subscribe to our
+<a href="https://feeds.feedburner.com/ContinuousBlog/">
+RSS feed
+</a>
+or
+<a href="https://twitter.com/jenkinsci">
+follow us on Twitter
+</a>
+</div>
+<!-- starting partial blogcardlist.html.haml -->
+<div class="content blog-posts">
+<div class="item-list">
+<ul class="ji-blog-list ji-item-list">
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/07/08/workflow-plugin-tutorial-writing-a-step-impl/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+08
+</div>
+</div>
+<h5 class="title">
+Workflow plugin tutorial: writing a Step impl
+</h5>
+</div>
+<p class="teaser">
+The other day I was explaining how to implement a new workflow primitive to Vivek Pandey, and I captured it as a recording.
+
+
+
+
+The recording goes over how to implement the Step extension point, which is the workflow equivalent of BuildStep extension point. If you are interested in jumping on the workflow plugin hacking, this might be useful (and don't forget to get in touch...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/development">
+development
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/screencast">
+screencast
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/video">
+video
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/pipeline">
+pipeline
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/workflow">
+workflow
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/07/03/pictures-from-juc-and-cdsummit/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+03
+</div>
+</div>
+<h5 class="title">
+Pictures from JUC and cdSummit
+</h5>
+</div>
+<p class="teaser">
+I've uploaded pictures I've taken during JUC Boston and JUC Berlin.
+
+
+JUC Berlin pictures starts with pre-conference beer garden meet-up. See Vincent Latombe gives a talk about Literate plugin. I really appreciated his coming to this despite the fact that the event was only a few days before his wedding:
+
+
+
+
+
+
+In JUC Boston pictures, you can see some nice Jenkins lighting effect, as well as my...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/meetup">
+meetup
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/juc">
+juc
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/07/03/juc-berlin-summary/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+03
+</div>
+</div>
+<h5 class="title">
+JUC Berlin summary
+</h5>
+</div>
+<p class="teaser">
+After a very successful JUC Boston we headed over to Berlin for JUC Berlin. I've heard the attendance number was comparable to that of JUC Boston, with close to 400 people registered and 350+ people who came.
+
+
+The event kicked off at a pre-conference beer garden meetup, except it turned out that the venue was closed on that day and we had to make an...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/meetup">
+meetup
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/juc">
+juc
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/pipeline">
+pipeline
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/workflow">
+workflow
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/07/03/jenkins-user-event-and-code-camp-2014-copenhagen/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+03
+</div>
+</div>
+<h5 class="title">
+Jenkins User Event & Code Camp 2014, Copenhagen
+</h5>
+</div>
+<p class="teaser">
+This is a guest post from Adam Henriques.
+
+
+
+
+On August 22nd Jenkins CI enthusiasts will gather in Copenhagen, Denmark for the 3rd consecutive year for a day of networking and knowledge sharing. Over the past two years the event has grown and this year we are expecting a record number of participants representing Jenkins CI experts, enthusiasts, and users from all over the world. 
+
+
+
+
+The...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/guest post">
+guest post
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/meetup">
+meetup
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/07/03/jenkins-office-hours-dotci/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+03
+</div>
+</div>
+<h5 class="title">
+Jenkins Office Hours: dotCi
+</h5>
+</div>
+<p class="teaser">
+Surya walked us through the dotCI source code yesterday, and a bunch of ideas about how to reuse pieces are discussed. The recording is on YouTube, and my notes are here....
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/screencast">
+screencast
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/video">
+video
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/07/01/jenkins-user-meet-up-in-london/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+01
+</div>
+</div>
+<h5 class="title">
+Jenkins User Meet-up in London?
+</h5>
+</div>
+<p class="teaser">
+I'll be visiting London in early September, and if possible I'd love to organize some get together of Jenkins users/devs. I wonder if anyone is interested in hosting the event?
+
+
+I think it just needs to fit 20 or so people, so all we need is a single conference room somewhere in London. If you think you might be able to help, please drop us...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/meetup">
+meetup
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/07/01/jenkins-office-hours-dotci/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+01
+</div>
+</div>
+<h5 class="title">
+Jenkins Office Hours: dotCi
+</h5>
+</div>
+<p class="teaser">
+Tomorrow in Jenkins office hours, Surya Gaddipati will be going over DotCi, a package of features that integrates Jenkins closely with GitHub, configuration via .ci.yml file in source tree, built-in Docker support and MongoDB backend. 
+
+
+I think there's a number of interesting pieces here that could be split into individual plugins for reuse, and possible alignment with existing efforts like Script Security plugin or...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/news">
+news
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/plugins">
+plugins
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://bitwiseman.github.io/jenkins.io/carousel/blog/2014/06/20/juc-boston-what-a-day/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jun
+</div>
+<div class="day">
+20
+</div>
+</div>
+<h5 class="title">
+JUC Boston, what a day!
+</h5>
+</div>
+<p class="teaser">
+We kicked off this year's Jenkins User Conference world tour in Boston this Wednesday. The event was well-attended with more than 450 people registered and 400+ people showed up. So big thank you for everyone who came!
+
+
+Workflow plugin that Jesse presented was a big hit and lit up twittersphere, and while I was only able to listen to parts of sessions as people had...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/meetup">
+meetup
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/juc">
+juc
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/pipeline">
+pipeline
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/tags/workflow">
+workflow
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- ending partial blogcardlist.html.haml -->
+<div>
+<nav>
+<ul class="pagination">
+<li class='47176446879480: 47176447067560: 47176447249280: 47176447427800: 47176447606060: 47176447780240: 47176448108300: 47176448530480: :change_frequency=&gt;"never", :lastmod=&gt;"2018-11-08", :layout=&gt;"default", :paginate_generated=&gt;true, :posts=&gt;[Awestruct::Page{ :priority=&gt;0.1, :section=&gt;"blog", :selected_tag=&gt;nil, :title=&gt;"Jenkins :url=&gt;"/node/page/47.html"} Awestruct::Page{ Blog", Community layout=&gt;post output_path=&gt;/blog/2014/07/09/planned-changes-in-jenkins-user-conference-contact-information-collection/index.html, output_path=&gt;/blog/2014/07/18/juc-israel-report/index.html, output_path=&gt;/blog/2014/07/28/jenkins-figure-is-available-in-shapeways/index.html, output_path=&gt;/blog/2014/07/30/geek-choice-awards-2014/index.html, output_path=&gt;/blog/2014/08/11/user-interface-refresh/index.html, output_path=&gt;/blog/2014/08/12/jenkins-user-meet-up-in-london/index.html, output_path=&gt;/blog/2014/08/12/official-jenkins-lts-docker-image/index.html, output_path=&gt;/blog/2014/08/28/juc-sf-2014-is-here/index.html, page-item source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-07-09-planned-changes-in-jenkins-user-conference-contact-information-collection.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-07-18-juc-israel-report.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-07-28-jenkins-figure-is-available-in-shapeways.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-07-30-geek-choice-awards-2014.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-08-11-user-interface-refresh.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-08-12-jenkins-user-meet-up-in-london.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-08-12-official-jenkins-lts-docker-image.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-08-28-juc-sf-2014-is-here.html, {:__is_layout=&gt;false, }, }],'>
+<a class="page-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/page/47.html">
+&laquo;
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="..">
+1
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/2.html">
+2
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/3.html">
+3
+</a>
+</li>
+<li class="page-item disabled">
+<a class="page-link" href="#">
+...
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/46.html">
+46
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/47.html">
+47
+</a>
+</li>
+<li class="active page-item">
+<a class="page-link" href="../page/48.html">
+48
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/49.html">
+49
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/50.html">
+50
+</a>
+</li>
+<li class="page-item disabled">
+<a class="page-link" href="#">
+...
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/77.html">
+77
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/78.html">
+78
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/79.html">
+79
+</a>
+</li>
+<li class='47176439667820: 47176444333560: 47176445153400: 47176445929120: 47176446648660: 47176446887440: 47176447070920: 47176447251220: :change_frequency=&gt;"never", :lastmod=&gt;"2018-11-08", :layout=&gt;"default", :paginate_generated=&gt;true, :posts=&gt;[Awestruct::Page{ :priority=&gt;0.1, :section=&gt;"blog", :selected_tag=&gt;nil, :title=&gt;"Jenkins :url=&gt;"/node/page/49.html"} Awestruct::Page{ Blog", Community layout=&gt;post output_path=&gt;/blog/2014/06/03/jenkins-won-sdtimes-100-2014/index.html, output_path=&gt;/blog/2014/06/05/get-drunk-on-the-code-in-juc-boston/index.html, output_path=&gt;/blog/2014/06/06/other-events-for-juc-visitors-cd-seminar/index.html, output_path=&gt;/blog/2014/06/09/thinking-about-moving-on-to-servlet-3-0/index.html, output_path=&gt;/blog/2014/06/10/two-weeks-till-jenkins-user-conference-berlin/index.html, output_path=&gt;/blog/2014/06/11/juc-speaker-sneakpeak-a-build-ecosystem-for-loosely-compiled-code/index.html, output_path=&gt;/blog/2014/06/16/get-together-at-beer-garden-for-juc-berlin/index.html, output_path=&gt;/blog/2014/06/19/juc-europe-sneak-peak-integrated-pipelines/index.html, page-item source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-03-jenkins-won-sdtimes-100-2014.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-05-get-drunk-on-the-code-in-juc-boston.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-06-other-events-for-juc-visitors-cd-seminar.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-09-thinking-about-moving-on-to-servlet-3-0.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-10-two-weeks-till-jenkins-user-conference-berlin.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-11-juc-speaker-sneakpeak-a-build-ecosystem-for-loosely-compiled-code.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-16-get-together-at-beer-garden-for-juc-berlin.html, source_path=&gt;/Users/bitwiseman/github/infra/jenkins.io/content/blog/2014/2014-06-19-juc-europe-sneak-peak-integrated-pipelines.html, {:__is_layout=&gt;false, }, }],'>
+<a class="page-link" href="https://bitwiseman.github.io/jenkins.io/carousel/node/page/49.html">
+&raquo;
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="col-md-4 events vertical">
+<div class="content">
+<!-- starting partial events.html.haml -->
+<div class="item-list">
+<ul class="ji-date-list ji-item-list">
+<li class="post event">
+<a class="body" href="https://www.meetup.com/Toronto-Jenkins-Area-Meetup/events/253459028/" target="_blank">
+<div class="header time">
+<div class="date-time">
+<div class="date">
+<div class="month">
+Nov
+</div>
+<div class="day">
+14
+</div>
+<div class="dow">
+Wed
+</div>
+</div>
+<div class="time">
+ 5:15 pm
+</div>
+</div>
+<h5 class="title">
+First Toronto Jenkins Area Meetup
+</h5>
+</div>
+<p class="teaser">
+First Toronto Jenkins Area Meetup
+
+<div class="more"></div>
+</p>
+</a>
+<div class="attrs"></div>
+</li>
+<li class="post event">
+<a class="body" href="https://www.meetup.com/Raleigh-Jenkins-Area-Meetup/events/tmxgwmyxpbsb/" target="_blank">
+<div class="header time">
+<div class="date-time">
+<div class="date">
+<div class="month">
+Nov
+</div>
+<div class="day">
+14
+</div>
+<div class="dow">
+Wed
+</div>
+</div>
+<div class="time">
+ 6:00 pm
+</div>
+</div>
+<h5 class="title">
+Triangle Jenkins Area Meetup
+</h5>
+</div>
+<p class="teaser">
+Triangle Jenkins Area Meetup
+
+<div class="more"></div>
+</p>
+</a>
+<div class="attrs"></div>
+</li>
+<li class="post event">
+<a class="body" href="https://www.meetup.com/Moscow-Jenkins-Meetup/events/256063970/" target="_blank">
+<div class="header time">
+<div class="date-time">
+<div class="date">
+<div class="month">
+Nov
+</div>
+<div class="day">
+15
+</div>
+<div class="dow">
+Thu
+</div>
+</div>
+<div class="time">
+ 7:00 pm
+</div>
+</div>
+<h5 class="title">
+Moscow JAM
+</h5>
+</div>
+<p class="teaser">
+
+Cloud Native Jenkins with Carlos Sanchez:
+Scaling Jenkins with Kubernetes
+
+<div class="more"></div>
+</p>
+</a>
+<div class="attrs"></div>
+</li>
+<li class="post event">
+<a class="body" href="https://www.meetup.com/Denver-Jenkins-Area-Meetup/events/256006575/" target="_blank">
+<div class="header time">
+<div class="date-time">
+<div class="date">
+<div class="month">
+Dec
+</div>
+<div class="day">
+4
+</div>
+<div class="dow">
+Tue
+</div>
+</div>
+<div class="time">
+ 5:30 pm
+</div>
+</div>
+<h5 class="title">
+From Locally Deployed to Kubernetes Cloud Native
+</h5>
+</div>
+<p class="teaser">
+From Locally Deployed to Kubernetes Cloud Native
+
+<div class="more"></div>
+</p>
+</a>
+<div class="attrs"></div>
+</li>
+</ul>
+</div>
+
+<!-- ending partial events.html.haml -->
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="https://bitwiseman.github.io/jenkins.io/carousel/assets/bower/anchor-js/anchor.min.js"></script>
+<script src="https://bitwiseman.github.io/jenkins.io/carousel/assets/bower/tether/js/tether.min.js"></script>
+<script src="https://bitwiseman.github.io/jenkins.io/carousel/assets/bower/bootstrap/js/bootstrap.min.js"></script>
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<p class="box">
+<a href="https://github.com/jenkins-infra/jenkins.io/edit/master/content//node/index.html.haml" title="Edit /node/index.html.haml on GitHub">
+Improve this page
+</a>
+|
+<a href="https://github.com/jenkins-infra/jenkins.io/commits/master/content//node/index.html.haml" title="View /node/index.html.haml history on GitHub">
+Page history
+</a>
+</p>
+<div class="license-box">
+<div id="creativecommons">
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">
+<p>
+<img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png">
+</p>
+</a>
+<p>
+The content driving this site is licensed under the Creative
+Commons Attribution-ShareAlike 4.0 license.
+</p>
+</div>
+</div>
+</div>
+<div class="links col-md-8">
+<div class="container">
+<div class="row">
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Resources</h5>
+<ul class="resources">
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/events">
+Events
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/doc">
+Documentation
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/node">
+Blog
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Solutions</h5>
+<ul>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/android">
+Android
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/c">
+C/C++
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/docker">
+Docker
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/embedded">
+Embedded
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/github">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/java">
+Java
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/php">
+PHP
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/pipeline">
+Continuous Delivery
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/python">
+Python
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/solutions/ruby">
+Ruby
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Project</h5>
+<ul class="project">
+<li>
+<a href="https://issues.jenkins-ci.org">
+Issue tracker
+</a>
+</li>
+<li>
+<a href="https://wiki.jenkins.io">
+Wiki
+</a>
+</li>
+<li>
+<a href="https://github.com/jenkinsci">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://ci.jenkins.io">
+Jenkins on Jenkins
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Community</h5>
+<ul class="community">
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-users">
+Users mailing list
+</a>
+</li>
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-dev">
+Developers mailing list
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/sigs">
+Special Interest Groups
+</a>
+</li>
+<li>
+<a href="https://twitter.com/jenkinsci">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://reddit.com/r/jenkinsci">
+Reddit
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/merchandise">
+Merchandise
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/carousel/awards">
+Awards
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+ga('create', 'UA-000000-0', 'auto');
+ga('send', 'pageview');
+ga('set', 'anonymizeIp', true);
+
+</script>
+
+<script>
+  !function(d,s,id) {
+    var js, fjs=d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id=id;
+      js.src="//platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document,"script","twitter-wjs");
+</script>
+</body>
+</html>

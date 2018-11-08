@@ -1,0 +1,1922 @@
+<feed xmlns='http://www.w3.org/2005/Atom'>
+  <title>Jenkins plugin releases</title>
+  <link href='https://jenkins.io/' />
+  <link href='http://kohsuke.org/test.atom' rel='self' type='application/atom+xml' />
+  <updated>2018-11-08T20:50:37.061+00:00</updated>
+  <author>
+    <name>Jenkins History Bot</name>
+  </author>
+  <id>urn:63067410335c11e0bc8e0800200c9a66:feed</id>
+  <entry>
+    <title>Generic Webhook Trigger 1.48</title>
+    <link href='https://plugins.jenkins.io/generic-webhook-trigger' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:generic-webhook-trigger:1.48</id>
+    <published>2018-11-08T17:48:15.320+00:00</published>
+    <updated>2018-11-08T17:48:15.320+00:00</updated>
+    <summary>Generic Webhook Trigger 1.48</summary>
+  </entry>
+  <entry>
+    <title>P4 1.9.4</title>
+    <link href='https://plugins.jenkins.io/p4' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:p4:1.9.4</id>
+    <published>2018-11-08T14:10:04.516+00:00</published>
+    <updated>2018-11-08T14:10:04.516+00:00</updated>
+    <summary>P4 1.9.4</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: AWS Steps 1.33</title>
+    <link href='https://plugins.jenkins.io/pipeline-aws' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:de.taimos:pipeline-aws:1.33</id>
+    <published>2018-11-08T15:33:33.958+00:00</published>
+    <updated>2018-11-08T15:33:33.958+00:00</updated>
+    <summary>Pipeline: AWS Steps 1.33</summary>
+  </entry>
+  <entry>
+    <title>Cerberus Testing 1.5</title>
+    <link href='https://plugins.jenkins.io/cerberus-testing' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:cerberus-testing:1.5</id>
+    <published>2018-11-07T11:26:34.594+00:00</published>
+    <updated>2018-11-07T11:26:34.594+00:00</updated>
+    <summary>Cerberus Testing 1.5</summary>
+  </entry>
+  <entry>
+    <title>FitNesse 1.24</title>
+    <link href='https://plugins.jenkins.io/fitnesse' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:fitnesse:1.24</id>
+    <published>2018-11-07T20:32:31.894+00:00</published>
+    <updated>2018-11-07T20:32:31.894+00:00</updated>
+    <summary>FitNesse 1.24</summary>
+  </entry>
+  <entry>
+    <title>Generic Webhook Trigger 1.47</title>
+    <link href='https://plugins.jenkins.io/generic-webhook-trigger' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:generic-webhook-trigger:1.47</id>
+    <published>2018-11-07T13:59:14.482+00:00</published>
+    <updated>2018-11-07T13:59:14.482+00:00</updated>
+    <summary>Generic Webhook Trigger 1.47</summary>
+  </entry>
+  <entry>
+    <title>JIRA 3.0.5</title>
+    <link href='https://plugins.jenkins.io/jira' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:jira:3.0.5</id>
+    <published>2018-11-07T08:41:20.440+00:00</published>
+    <updated>2018-11-07T08:41:20.440+00:00</updated>
+    <summary>JIRA 3.0.5</summary>
+  </entry>
+  <entry>
+    <title>Klocwork Community 2.3.9</title>
+    <link href='https://plugins.jenkins.io/klocwork' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:klocwork:2.3.9</id>
+    <published>2018-11-07T09:51:29.569+00:00</published>
+    <updated>2018-11-07T09:51:29.569+00:00</updated>
+    <summary>Klocwork Community 2.3.9</summary>
+  </entry>
+  <entry>
+    <title>Nested View 1.17</title>
+    <link href='https://plugins.jenkins.io/nested-view' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:nested-view:1.17</id>
+    <published>2018-11-07T13:18:50.715+00:00</published>
+    <updated>2018-11-07T13:18:50.715+00:00</updated>
+    <summary>Nested View 1.17</summary>
+  </entry>
+  <entry>
+    <title>Netsparker Cloud Scan 1.1.5</title>
+    <link href='https://plugins.jenkins.io/netsparker-cloud-scan' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:netsparker-cloud-scan:1.1.5</id>
+    <published>2018-11-07T00:15:37.925+00:00</published>
+    <updated>2018-11-07T00:15:37.925+00:00</updated>
+    <summary>Netsparker Cloud Scan 1.1.5</summary>
+  </entry>
+  <entry>
+    <title>Phabricator Differential 2.0.2</title>
+    <link href='https://plugins.jenkins.io/phabricator-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:phabricator-plugin:2.0.2</id>
+    <published>2018-11-07T13:15:52.484+00:00</published>
+    <updated>2018-11-07T13:15:52.484+00:00</updated>
+    <summary>Phabricator Differential 2.0.2</summary>
+  </entry>
+  <entry>
+    <title>Pipeline Utility Steps 2.2.0</title>
+    <link href='https://plugins.jenkins.io/pipeline-utility-steps' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:pipeline-utility-steps:2.2.0</id>
+    <published>2018-11-07T16:05:53.508+00:00</published>
+    <updated>2018-11-07T16:05:53.508+00:00</updated>
+    <summary>Pipeline Utility Steps 2.2.0</summary>
+  </entry>
+  <entry>
+    <title>Queue cleanup 1.3</title>
+    <link href='https://plugins.jenkins.io/queue-cleanup' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:queue-cleanup:1.3</id>
+    <published>2018-11-07T05:39:21.223+00:00</published>
+    <updated>2018-11-07T05:39:21.223+00:00</updated>
+    <summary>Queue cleanup 1.3</summary>
+  </entry>
+  <entry>
+    <title>AnsiColor 0.5.3</title>
+    <link href='https://plugins.jenkins.io/ansicolor' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:ansicolor:0.5.3</id>
+    <published>2018-11-06T19:49:01.704+00:00</published>
+    <updated>2018-11-06T19:49:01.704+00:00</updated>
+    <summary>AnsiColor 0.5.3</summary>
+  </entry>
+  <entry>
+    <title>Artifact Manager on S3 1.2</title>
+    <link href='https://plugins.jenkins.io/artifact-manager-s3' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:artifact-manager-s3:1.2</id>
+    <published>2018-11-06T15:32:05.339+00:00</published>
+    <updated>2018-11-06T15:32:05.339+00:00</updated>
+    <summary>Artifact Manager on S3 1.2</summary>
+  </entry>
+  <entry>
+    <title>Benchmark 1.0.8</title>
+    <link href='https://plugins.jenkins.io/benchmark' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:benchmark:1.0.8</id>
+    <published>2018-11-06T19:36:02.245+00:00</published>
+    <updated>2018-11-06T19:36:02.245+00:00</updated>
+    <summary>Benchmark 1.0.8</summary>
+  </entry>
+  <entry>
+    <title>BTC DSL for Pipeline 2.0.2</title>
+    <link href='https://plugins.jenkins.io/btc-embeddedplatform' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.btc.ep:btc-embeddedplatform:2.0.2</id>
+    <published>2018-11-06T14:20:00.689+00:00</published>
+    <updated>2018-11-06T14:20:00.689+00:00</updated>
+    <summary>BTC DSL for Pipeline 2.0.2</summary>
+  </entry>
+  <entry>
+    <title>Cerberus Testing 1.4</title>
+    <link href='https://plugins.jenkins.io/cerberus-testing' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:cerberus-testing:1.4</id>
+    <published>2018-11-06T10:32:25.176+00:00</published>
+    <updated>2018-11-06T10:32:25.176+00:00</updated>
+    <summary>Cerberus Testing 1.4</summary>
+  </entry>
+  <entry>
+    <title>Compuware Topaz for Total Test 2.1.2</title>
+    <link href='https://plugins.jenkins.io/compuware-topaz-for-total-test' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.compuware.jenkins:compuware-topaz-for-total-test:2.1.2</id>
+    <published>2018-11-06T11:59:17.582+00:00</published>
+    <updated>2018-11-06T11:59:17.582+00:00</updated>
+    <summary>Compuware Topaz for Total Test 2.1.2</summary>
+  </entry>
+  <entry>
+    <title>Compuware Topaz Utilities 1.0.3</title>
+    <link href='https://plugins.jenkins.io/compuware-topaz-utilities' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.compuware.jenkins:compuware-topaz-utilities:1.0.3</id>
+    <published>2018-11-06T13:41:25.983+00:00</published>
+    <updated>2018-11-06T13:41:25.983+00:00</updated>
+    <summary>Compuware Topaz Utilities 1.0.3</summary>
+  </entry>
+  <entry>
+    <title>Datadog 0.6.5</title>
+    <link href='https://plugins.jenkins.io/datadog' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.datadog.jenkins.plugins:datadog:0.6.5</id>
+    <published>2018-11-06T19:35:02.979+00:00</published>
+    <updated>2018-11-06T19:35:02.979+00:00</updated>
+    <summary>Datadog 0.6.5</summary>
+  </entry>
+  <entry>
+    <title>docker-build-step 2.2</title>
+    <link href='https://plugins.jenkins.io/docker-build-step' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:docker-build-step:2.2</id>
+    <published>2018-11-06T15:52:13.616+00:00</published>
+    <updated>2018-11-06T15:52:13.616+00:00</updated>
+    <summary>docker-build-step 2.2</summary>
+  </entry>
+  <entry>
+    <title>NowSecure Auto 1.4</title>
+    <link href='https://plugins.jenkins.io/nowsecure-auto-security-test' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nowsecure-auto-security-test:1.4</id>
+    <published>2018-11-06T01:31:43.423+00:00</published>
+    <updated>2018-11-06T01:31:43.423+00:00</updated>
+    <summary>NowSecure Auto 1.4</summary>
+  </entry>
+  <entry>
+    <title>Spotinst 2.0.7</title>
+    <link href='https://plugins.jenkins.io/spotinst' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:spotinst:2.0.7</id>
+    <published>2018-11-06T12:29:45.057+00:00</published>
+    <updated>2018-11-06T12:29:45.057+00:00</updated>
+    <summary>Spotinst 2.0.7</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Job 2.28</title>
+    <link href='https://plugins.jenkins.io/workflow-job' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-job:2.28</id>
+    <published>2018-11-06T18:58:59.070+00:00</published>
+    <updated>2018-11-06T18:58:59.070+00:00</updated>
+    <summary>Pipeline: Job 2.28</summary>
+  </entry>
+  <entry>
+    <title>Active Directory 2.10</title>
+    <link href='https://plugins.jenkins.io/active-directory' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:active-directory:2.10</id>
+    <published>2018-11-05T10:19:29.263+00:00</published>
+    <updated>2018-11-05T10:19:29.263+00:00</updated>
+    <summary>Active Directory 2.10</summary>
+  </entry>
+  <entry>
+    <title>Bitbucket Filter Project Trait 1.0 (new)</title>
+    <link href='https://plugins.jenkins.io/bitbucket-filter-project-trait' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:bitbucket-filter-project-trait:1.0</id>
+    <published>2018-11-05T22:20:16.895+00:00</published>
+    <updated>2018-11-05T22:20:16.895+00:00</updated>
+    <summary>Bitbucket Filter Project Trait 1.0</summary>
+  </entry>
+  <entry>
+    <title>CollabNet Plugins 2.0.6</title>
+    <link href='https://plugins.jenkins.io/collabnet' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:collabnet:2.0.6</id>
+    <published>2018-11-05T22:03:12.555+00:00</published>
+    <updated>2018-11-05T22:03:12.555+00:00</updated>
+    <summary>CollabNet Plugins 2.0.6</summary>
+  </entry>
+  <entry>
+    <title>Coverity 1.11.2</title>
+    <link href='https://plugins.jenkins.io/coverity' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:coverity:1.11.2</id>
+    <published>2018-11-05T16:42:43.207+00:00</published>
+    <updated>2018-11-05T16:42:43.207+00:00</updated>
+    <summary>Coverity 1.11.2</summary>
+  </entry>
+  <entry>
+    <title>Downstream Build Cache 1.2 (new)</title>
+    <link href='https://plugins.jenkins.io/downstream-build-cache' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.axis.system.jenkins.plugins.downstream:downstream-build-cache:1.2</id>
+    <published>2018-11-05T20:32:37.270+00:00</published>
+    <updated>2018-11-05T20:32:37.270+00:00</updated>
+    <summary>Downstream Build Cache 1.2</summary>
+  </entry>
+  <entry>
+    <title>360 FireLine 1.6.10</title>
+    <link href='https://plugins.jenkins.io/fireline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.plugin:fireline:1.6.10</id>
+    <published>2018-11-05T06:23:10.029+00:00</published>
+    <updated>2018-11-05T06:23:10.029+00:00</updated>
+    <summary>360 FireLine 1.6.10</summary>
+  </entry>
+  <entry>
+    <title>Jackson 2 API 2.9.7.1</title>
+    <link href='https://plugins.jenkins.io/jackson2-api' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:jackson2-api:2.9.7.1</id>
+    <published>2018-11-05T19:35:04.411+00:00</published>
+    <updated>2018-11-05T19:35:04.411+00:00</updated>
+    <summary>Jackson 2 API 2.9.7.1</summary>
+  </entry>
+  <entry>
+    <title>Nirmata 1.0.8</title>
+    <link href='https://plugins.jenkins.io/nirmata' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nirmata:1.0.8</id>
+    <published>2018-11-05T14:01:21.103+00:00</published>
+    <updated>2018-11-05T14:01:21.103+00:00</updated>
+    <summary>Nirmata 1.0.8</summary>
+  </entry>
+  <entry>
+    <title>NowSecure Auto 1.3</title>
+    <link href='https://plugins.jenkins.io/nowsecure-auto-security-test' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nowsecure-auto-security-test:1.3</id>
+    <published>2018-11-05T18:11:40.663+00:00</published>
+    <updated>2018-11-05T18:11:40.663+00:00</updated>
+    <summary>NowSecure Auto 1.3</summary>
+  </entry>
+  <entry>
+    <title>OctopusDeploy 1.9.0</title>
+    <link href='https://plugins.jenkins.io/octopusdeploy' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:hudson.plugins.octopusdeploy:octopusdeploy:1.9.0</id>
+    <published>2018-11-05T17:47:31.179+00:00</published>
+    <updated>2018-11-05T17:47:31.179+00:00</updated>
+    <summary>OctopusDeploy 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>OpenShift Login 1.0.10</title>
+    <link href='https://plugins.jenkins.io/openshift-login' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.openshift.jenkins:openshift-login:1.0.10</id>
+    <published>2018-11-05T20:32:58.832+00:00</published>
+    <updated>2018-11-05T20:32:58.832+00:00</updated>
+    <summary>OpenShift Login 1.0.10</summary>
+  </entry>
+  <entry>
+    <title>Paranoia 1.0 (new)</title>
+    <link href='https://plugins.jenkins.io/paranoia' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:paranoia:1.0</id>
+    <published>2018-11-05T19:41:18.548+00:00</published>
+    <updated>2018-11-05T19:41:18.548+00:00</updated>
+    <summary>Paranoia 1.0</summary>
+  </entry>
+  <entry>
+    <title>Skip Notifications Trait 1.0.2</title>
+    <link href='https://plugins.jenkins.io/skip-notifications-trait' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:skip-notifications-trait:1.0.2</id>
+    <published>2018-11-05T18:09:15.015+00:00</published>
+    <updated>2018-11-05T18:09:15.015+00:00</updated>
+    <summary>Skip Notifications Trait 1.0.2</summary>
+  </entry>
+  <entry>
+    <title>Yet Another Build Visualizer 1.1 (new)</title>
+    <link href='https://plugins.jenkins.io/yet-another-build-visualizer' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.axis.system.jenkins.plugins.downstream:yet-another-build-visualizer:1.1</id>
+    <published>2018-11-05T20:38:46.665+00:00</published>
+    <updated>2018-11-05T20:38:46.665+00:00</updated>
+    <summary>Yet Another Build Visualizer 1.1</summary>
+  </entry>
+  <entry>
+    <title>AWS Parameter Store Build Wrapper 1.2.1</title>
+    <link href='https://plugins.jenkins.io/aws-parameter-store' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:aws-parameter-store:1.2.1</id>
+    <published>2018-11-04T15:44:05.908+00:00</published>
+    <updated>2018-11-04T15:44:05.908+00:00</updated>
+    <summary>AWS Parameter Store Build Wrapper 1.2.1</summary>
+  </entry>
+  <entry>
+    <title>MySQL Database 1.3</title>
+    <link href='https://plugins.jenkins.io/database-mysql' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:database-mysql:1.3</id>
+    <published>2018-11-04T08:28:55.570+00:00</published>
+    <updated>2018-11-04T08:28:55.570+00:00</updated>
+    <summary>MySQL Database 1.3</summary>
+  </entry>
+  <entry>
+    <title>JaCoCo 3.0.4</title>
+    <link href='https://plugins.jenkins.io/jacoco' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:jacoco:3.0.4</id>
+    <published>2018-11-04T10:55:37.375+00:00</published>
+    <updated>2018-11-04T10:55:37.375+00:00</updated>
+    <summary>JaCoCo 3.0.4</summary>
+  </entry>
+  <entry>
+    <title>New Relic Deployment Notifier 1.5</title>
+    <link href='https://plugins.jenkins.io/newrelic-deployment-notifier' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:newrelic-deployment-notifier:1.5</id>
+    <published>2018-11-04T00:19:39.671+00:00</published>
+    <updated>2018-11-04T00:19:39.671+00:00</updated>
+    <summary>New Relic Deployment Notifier 1.5</summary>
+  </entry>
+  <entry>
+    <title>Agiletestware Pangolin Connector for TestRail 2.3</title>
+    <link href='https://plugins.jenkins.io/pangolin-testrail-connector' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:pangolin-testrail-connector:2.3</id>
+    <published>2018-11-04T09:24:12.896+00:00</published>
+    <updated>2018-11-04T09:24:12.896+00:00</updated>
+    <summary>Agiletestware Pangolin Connector for TestRail 2.3</summary>
+  </entry>
+  <entry>
+    <title>Queue cleanup 1.1</title>
+    <link href='https://plugins.jenkins.io/queue-cleanup' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:queue-cleanup:1.1</id>
+    <published>2018-11-04T12:25:25.723+00:00</published>
+    <updated>2018-11-04T12:25:25.723+00:00</updated>
+    <summary>Queue cleanup 1.1</summary>
+  </entry>
+  <entry>
+    <title>View Job Filters 2.1.0</title>
+    <link href='https://plugins.jenkins.io/view-job-filters' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:view-job-filters:2.1.0</id>
+    <published>2018-11-04T18:53:11.956+00:00</published>
+    <updated>2018-11-04T18:53:11.956+00:00</updated>
+    <summary>View Job Filters 2.1.0</summary>
+  </entry>
+  <entry>
+    <title>White Source 18.10.2</title>
+    <link href='https://plugins.jenkins.io/whitesource' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:whitesource:18.10.2</id>
+    <published>2018-11-04T07:27:08.407+00:00</published>
+    <updated>2018-11-04T07:27:08.407+00:00</updated>
+    <summary>White Source 18.10.2</summary>
+  </entry>
+  <entry>
+    <title>EC2 Fleet 1.1.8</title>
+    <link href='https://plugins.jenkins.io/ec2-fleet' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.amazon.jenkins.fleet:ec2-fleet:1.1.8</id>
+    <published>2018-11-03T04:28:30.825+00:00</published>
+    <updated>2018-11-03T04:28:30.825+00:00</updated>
+    <summary>EC2 Fleet 1.1.8</summary>
+  </entry>
+  <entry>
+    <title>Gerrit Code Review 0.3.2</title>
+    <link href='https://plugins.jenkins.io/gerrit-code-review' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:gerrit-code-review:0.3.2</id>
+    <published>2018-11-03T02:09:59.427+00:00</published>
+    <updated>2018-11-03T02:09:59.427+00:00</updated>
+    <summary>Gerrit Code Review 0.3.2</summary>
+  </entry>
+  <entry>
+    <title>OverOps Query 1.0.17</title>
+    <link href='https://plugins.jenkins.io/overops-query' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.overops.plugins:overops-query:1.0.17</id>
+    <published>2018-11-03T04:55:19.767+00:00</published>
+    <updated>2018-11-03T04:55:19.767+00:00</updated>
+    <summary>OverOps Query 1.0.17</summary>
+  </entry>
+  <entry>
+    <title>SAML 1.1.1</title>
+    <link href='https://plugins.jenkins.io/saml' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:saml:1.1.1</id>
+    <published>2018-11-03T17:29:21.455+00:00</published>
+    <updated>2018-11-03T17:29:21.455+00:00</updated>
+    <summary>SAML 1.1.1</summary>
+  </entry>
+  <entry>
+    <title>DigitalOcean 0.19</title>
+    <link href='https://plugins.jenkins.io/digitalocean-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.dubture.jenkins:digitalocean-plugin:0.19</id>
+    <published>2018-11-02T07:49:44.113+00:00</published>
+    <updated>2018-11-02T07:49:44.113+00:00</updated>
+    <summary>DigitalOcean 0.19</summary>
+  </entry>
+  <entry>
+    <title>CloudBees File Leak Detector 1.6</title>
+    <link href='https://plugins.jenkins.io/file-leak-detector' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.cloudbees.jenkins.plugins:file-leak-detector:1.6</id>
+    <published>2018-11-02T17:32:48.119+00:00</published>
+    <updated>2018-11-02T17:32:48.119+00:00</updated>
+    <summary>CloudBees File Leak Detector 1.6</summary>
+  </entry>
+  <entry>
+    <title>Nexus Platform 3.3.20181102-112614.a65c3f1</title>
+    <link href='https://plugins.jenkins.io/nexus-jenkins-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.sonatype.nexus.ci:nexus-jenkins-plugin:3.3.20181102-112614.a65c3f1</id>
+    <published>2018-11-02T19:49:03.964+00:00</published>
+    <updated>2018-11-02T19:49:03.964+00:00</updated>
+    <summary>Nexus Platform 3.3.20181102-112614.a65c3f1</summary>
+  </entry>
+  <entry>
+    <title>Nirmata 1.0.7</title>
+    <link href='https://plugins.jenkins.io/nirmata' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nirmata:1.0.7</id>
+    <published>2018-11-02T05:08:04.738+00:00</published>
+    <updated>2018-11-02T05:08:04.738+00:00</updated>
+    <summary>Nirmata 1.0.7</summary>
+  </entry>
+  <entry>
+    <title>Nutanix Calm 1.1 (new)</title>
+    <link href='https://plugins.jenkins.io/nutanix-calm' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:nutanix-calm:1.1</id>
+    <published>2018-11-02T14:51:15.509+00:00</published>
+    <updated>2018-11-02T14:51:15.509+00:00</updated>
+    <summary>Nutanix Calm 1.1</summary>
+  </entry>
+  <entry>
+    <title>ontrack Jenkins 3.0</title>
+    <link href='https://plugins.jenkins.io/ontrack' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:ontrack:3.0</id>
+    <published>2018-11-02T09:42:47.391+00:00</published>
+    <updated>2018-11-02T09:42:47.391+00:00</updated>
+    <summary>ontrack Jenkins 3.0</summary>
+  </entry>
+  <entry>
+    <title>Performance 3.13</title>
+    <link href='https://plugins.jenkins.io/performance' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:performance:3.13</id>
+    <published>2018-11-02T10:21:31.891+00:00</published>
+    <updated>2018-11-02T10:21:31.891+00:00</updated>
+    <summary>Performance 3.13</summary>
+  </entry>
+  <entry>
+    <title>Skip Notifications Trait 1.0.1</title>
+    <link href='https://plugins.jenkins.io/skip-notifications-trait' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:skip-notifications-trait:1.0.1</id>
+    <published>2018-11-02T21:22:05.301+00:00</published>
+    <updated>2018-11-02T21:22:05.301+00:00</updated>
+    <summary>Skip Notifications Trait 1.0.1</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Supporting APIs 2.22</title>
+    <link href='https://plugins.jenkins.io/workflow-support' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-support:2.22</id>
+    <published>2018-11-02T14:27:59.491+00:00</published>
+    <updated>2018-11-02T14:27:59.491+00:00</updated>
+    <summary>Pipeline: Supporting APIs 2.22</summary>
+  </entry>
+  <entry>
+    <title>Xcode integration 2.0.9</title>
+    <link href='https://plugins.jenkins.io/xcode-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:xcode-plugin:2.0.9</id>
+    <published>2018-11-02T02:06:54.917+00:00</published>
+    <updated>2018-11-02T02:06:54.917+00:00</updated>
+    <summary>Xcode integration 2.0.9</summary>
+  </entry>
+  <entry>
+    <title>JiraTestResultReporter 2.0.7</title>
+    <link href='https://plugins.jenkins.io/JiraTestResultReporter' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:JiraTestResultReporter:2.0.7</id>
+    <published>2018-11-01T15:09:31.996+00:00</published>
+    <updated>2018-11-01T15:09:31.996+00:00</updated>
+    <summary>JiraTestResultReporter 2.0.7</summary>
+  </entry>
+  <entry>
+    <title>BTC DSL for Pipeline 2.0.1</title>
+    <link href='https://plugins.jenkins.io/btc-embeddedplatform' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.btc.ep:btc-embeddedplatform:2.0.1</id>
+    <published>2018-11-01T12:30:05.674+00:00</published>
+    <updated>2018-11-01T12:30:05.674+00:00</updated>
+    <summary>BTC DSL for Pipeline 2.0.1</summary>
+  </entry>
+  <entry>
+    <title>Config File Provider 3.4</title>
+    <link href='https://plugins.jenkins.io/config-file-provider' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:config-file-provider:3.4</id>
+    <published>2018-11-01T07:02:58.879+00:00</published>
+    <updated>2018-11-01T07:02:58.879+00:00</updated>
+    <summary>Config File Provider 3.4</summary>
+  </entry>
+  <entry>
+    <title>Configuration as Code 1.3</title>
+    <link href='https://plugins.jenkins.io/configuration-as-code' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins:configuration-as-code:1.3</id>
+    <published>2018-11-01T09:51:57.295+00:00</published>
+    <updated>2018-11-01T09:51:57.295+00:00</updated>
+    <summary>Configuration as Code 1.3</summary>
+  </entry>
+  <entry>
+    <title>Configuration as Code Support 1.3</title>
+    <link href='https://plugins.jenkins.io/configuration-as-code-support' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.configuration-as-code:configuration-as-code-support:1.3</id>
+    <published>2018-11-01T09:52:16.204+00:00</published>
+    <updated>2018-11-01T09:52:16.204+00:00</updated>
+    <summary>Configuration as Code Support 1.3</summary>
+  </entry>
+  <entry>
+    <title>Durable Task 1.27</title>
+    <link href='https://plugins.jenkins.io/durable-task' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:durable-task:1.27</id>
+    <published>2018-11-01T14:06:03.469+00:00</published>
+    <updated>2018-11-01T14:06:03.469+00:00</updated>
+    <summary>Durable Task 1.27</summary>
+  </entry>
+  <entry>
+    <title>Locale 1.4</title>
+    <link href='https://plugins.jenkins.io/locale' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:locale:1.4</id>
+    <published>2018-11-01T19:42:54.777+00:00</published>
+    <updated>2018-11-01T19:42:54.777+00:00</updated>
+    <summary>Locale 1.4</summary>
+  </entry>
+  <entry>
+    <title>Nirmata 1.0.6</title>
+    <link href='https://plugins.jenkins.io/nirmata' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nirmata:1.0.6</id>
+    <published>2018-11-01T17:26:40.075+00:00</published>
+    <updated>2018-11-01T17:26:40.075+00:00</updated>
+    <summary>Nirmata 1.0.6</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Nodes and Processes 2.26</title>
+    <link href='https://plugins.jenkins.io/workflow-durable-task-step' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-durable-task-step:2.26</id>
+    <published>2018-11-01T13:15:33.537+00:00</published>
+    <updated>2018-11-01T13:15:33.537+00:00</updated>
+    <summary>Pipeline: Nodes and Processes 2.26</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Job 2.27</title>
+    <link href='https://plugins.jenkins.io/workflow-job' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-job:2.27</id>
+    <published>2018-11-01T13:41:25.811+00:00</published>
+    <updated>2018-11-01T13:41:25.811+00:00</updated>
+    <summary>Pipeline: Job 2.27</summary>
+  </entry>
+  <entry>
+    <title>Bitbucket Branch Source 2.2.14</title>
+    <link href='https://plugins.jenkins.io/cloudbees-bitbucket-branch-source' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:cloudbees-bitbucket-branch-source:2.2.14</id>
+    <published>2018-10-31T22:16:53.715+00:00</published>
+    <updated>2018-10-31T22:16:53.715+00:00</updated>
+    <summary>Bitbucket Branch Source 2.2.14</summary>
+  </entry>
+  <entry>
+    <title>Delivery Pipeline 1.3.0</title>
+    <link href='https://plugins.jenkins.io/delivery-pipeline-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:se.diabol.jenkins.pipeline:delivery-pipeline-plugin:1.3.0</id>
+    <published>2018-10-31T16:09:09.225+00:00</published>
+    <updated>2018-10-31T16:09:09.225+00:00</updated>
+    <summary>Delivery Pipeline 1.3.0</summary>
+  </entry>
+  <entry>
+    <title>Kubernetes 1.13.5</title>
+    <link href='https://plugins.jenkins.io/kubernetes' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.csanchez.jenkins.plugins:kubernetes:1.13.5</id>
+    <published>2018-10-31T14:13:36.067+00:00</published>
+    <updated>2018-10-31T14:13:36.067+00:00</updated>
+    <summary>Kubernetes 1.13.5</summary>
+  </entry>
+  <entry>
+    <title>Nirmata 1.0.5</title>
+    <link href='https://plugins.jenkins.io/nirmata' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nirmata:1.0.5</id>
+    <published>2018-10-31T09:17:56.129+00:00</published>
+    <updated>2018-10-31T09:17:56.129+00:00</updated>
+    <summary>Nirmata 1.0.5</summary>
+  </entry>
+  <entry>
+    <title>Redgate SQL Change Automation 2.0.1</title>
+    <link href='https://plugins.jenkins.io/redgate-sql-ci' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.redgate.plugins.redgatesqlci:redgate-sql-ci:2.0.1</id>
+    <published>2018-10-31T15:14:59.767+00:00</published>
+    <updated>2018-10-31T15:14:59.767+00:00</updated>
+    <summary>Redgate SQL Change Automation 2.0.1</summary>
+  </entry>
+  <entry>
+    <title>Redmine Metrics Report 1.0.1</title>
+    <link href='https://plugins.jenkins.io/redmine-metrics-report' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:redmine-metrics-report:1.0.1</id>
+    <published>2018-10-31T03:26:14.714+00:00</published>
+    <updated>2018-10-31T03:26:14.714+00:00</updated>
+    <summary>Redmine Metrics Report 1.0.1</summary>
+  </entry>
+  <entry>
+    <title>Snyk Security 1.9.10</title>
+    <link href='https://plugins.jenkins.io/snyk-security-scanner' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.snyk.plugins:snyk-security-scanner:1.9.10</id>
+    <published>2018-10-31T07:02:24.810+00:00</published>
+    <updated>2018-10-31T07:02:24.810+00:00</updated>
+    <summary>Snyk Security 1.9.10</summary>
+  </entry>
+  <entry>
+    <title>ZAP Pipeline 1.5.1</title>
+    <link href='https://plugins.jenkins.io/zap-pipeline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.vrondakis.zap:zap-pipeline:1.5.1</id>
+    <published>2018-10-31T08:15:30.805+00:00</published>
+    <updated>2018-10-31T08:15:30.805+00:00</updated>
+    <summary>ZAP Pipeline 1.5.1</summary>
+  </entry>
+  <entry>
+    <title>Benchmark 1.0.7</title>
+    <link href='https://plugins.jenkins.io/benchmark' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:benchmark:1.0.7</id>
+    <published>2018-10-30T21:49:00.132+00:00</published>
+    <updated>2018-10-30T21:49:00.132+00:00</updated>
+    <summary>Benchmark 1.0.7</summary>
+  </entry>
+  <entry>
+    <title>BTC DSL for Pipeline 2.0.0 (new)</title>
+    <link href='https://plugins.jenkins.io/btc-embeddedplatform' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.btc.ep:btc-embeddedplatform:2.0.0</id>
+    <published>2018-10-30T14:22:26.902+00:00</published>
+    <updated>2018-10-30T14:22:26.902+00:00</updated>
+    <summary>BTC DSL for Pipeline 2.0.0</summary>
+  </entry>
+  <entry>
+    <title>CodeScene 1.2</title>
+    <link href='https://plugins.jenkins.io/codescene' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:codescene:1.2</id>
+    <published>2018-10-30T15:53:43.332+00:00</published>
+    <updated>2018-10-30T15:53:43.332+00:00</updated>
+    <summary>CodeScene 1.2</summary>
+  </entry>
+  <entry>
+    <title>Custom Tools 0.6</title>
+    <link href='https://plugins.jenkins.io/custom-tools-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.cloudbees.jenkins.plugins:custom-tools-plugin:0.6</id>
+    <published>2018-10-30T20:31:26.729+00:00</published>
+    <updated>2018-10-30T20:31:26.729+00:00</updated>
+    <summary>Custom Tools 0.6</summary>
+  </entry>
+  <entry>
+    <title>Kubernetes 1.13.3</title>
+    <link href='https://plugins.jenkins.io/kubernetes' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.csanchez.jenkins.plugins:kubernetes:1.13.3</id>
+    <published>2018-10-30T15:38:52.871+00:00</published>
+    <updated>2018-10-30T15:38:52.871+00:00</updated>
+    <summary>Kubernetes 1.13.3</summary>
+  </entry>
+  <entry>
+    <title>P4 1.9.3</title>
+    <link href='https://plugins.jenkins.io/p4' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:p4:1.9.3</id>
+    <published>2018-10-30T15:01:39.069+00:00</published>
+    <updated>2018-10-30T15:01:39.069+00:00</updated>
+    <summary>P4 1.9.3</summary>
+  </entry>
+  <entry>
+    <title>Stoplight Report 2.2.1</title>
+    <link href='https://plugins.jenkins.io/stoplightio-report' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.arkea.satd:stoplightio-report:2.2.1</id>
+    <published>2018-10-30T08:36:17.799+00:00</published>
+    <updated>2018-10-30T08:36:17.799+00:00</updated>
+    <summary>Stoplight Report 2.2.1</summary>
+  </entry>
+  <entry>
+    <title>ZAP Pipeline 1.5.0 (new)</title>
+    <link href='https://plugins.jenkins.io/zap-pipeline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.vrondakis.zap:zap-pipeline:1.5.0</id>
+    <published>2018-10-30T14:24:34.855+00:00</published>
+    <updated>2018-10-30T14:24:34.855+00:00</updated>
+    <summary>ZAP Pipeline 1.5.0</summary>
+  </entry>
+  <entry>
+    <title>BlazeMeter 4.7</title>
+    <link href='https://plugins.jenkins.io/BlazeMeterJenkinsPlugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.blazemeter.plugins:BlazeMeterJenkinsPlugin:4.7</id>
+    <published>2018-10-29T09:13:58.055+00:00</published>
+    <updated>2018-10-29T09:13:58.055+00:00</updated>
+    <summary>BlazeMeter 4.7</summary>
+  </entry>
+  <entry>
+    <title>Ant 1.9</title>
+    <link href='https://plugins.jenkins.io/ant' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:ant:1.9</id>
+    <published>2018-10-29T22:38:14.281+00:00</published>
+    <updated>2018-10-29T22:38:14.281+00:00</updated>
+    <summary>Ant 1.9</summary>
+  </entry>
+  <entry>
+    <title>Credentials Binding 1.17</title>
+    <link href='https://plugins.jenkins.io/credentials-binding' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:credentials-binding:1.17</id>
+    <published>2018-10-29T22:22:51.294+00:00</published>
+    <updated>2018-10-29T22:22:51.294+00:00</updated>
+    <summary>Credentials Binding 1.17</summary>
+  </entry>
+  <entry>
+    <title>OWASP Dependency-Check 3.3.4</title>
+    <link href='https://plugins.jenkins.io/dependency-check-jenkins-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:dependency-check-jenkins-plugin:3.3.4</id>
+    <published>2018-10-29T03:14:39.544+00:00</published>
+    <updated>2018-10-29T03:14:39.544+00:00</updated>
+    <summary>OWASP Dependency-Check 3.3.4</summary>
+  </entry>
+  <entry>
+    <title>DigitalOcean 0.18</title>
+    <link href='https://plugins.jenkins.io/digitalocean-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.dubture.jenkins:digitalocean-plugin:0.18</id>
+    <published>2018-10-29T10:14:16.247+00:00</published>
+    <updated>2018-10-29T10:14:16.247+00:00</updated>
+    <summary>DigitalOcean 0.18</summary>
+  </entry>
+  <entry>
+    <title>Gerrit Code Review 0.3</title>
+    <link href='https://plugins.jenkins.io/gerrit-code-review' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:gerrit-code-review:0.3</id>
+    <published>2018-10-29T08:18:31.384+00:00</published>
+    <updated>2018-10-29T08:18:31.384+00:00</updated>
+    <summary>Gerrit Code Review 0.3</summary>
+  </entry>
+  <entry>
+    <title>Inedo BuildMaster Plugin 2.1.0</title>
+    <link href='https://plugins.jenkins.io/inedo-buildmaster' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.inedo.buildmaster:inedo-buildmaster:2.1.0</id>
+    <published>2018-10-29T09:57:41.267+00:00</published>
+    <updated>2018-10-29T09:57:41.267+00:00</updated>
+    <summary>Inedo BuildMaster Plugin 2.1.0</summary>
+  </entry>
+  <entry>
+    <title>Localization: Chinese (Simplified) 0.0.11</title>
+    <link href='https://plugins.jenkins.io/localization-zh-cn' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:localization-zh-cn:0.0.11</id>
+    <published>2018-10-29T08:39:33.795+00:00</published>
+    <updated>2018-10-29T08:39:33.795+00:00</updated>
+    <summary>Localization: Chinese (Simplified) 0.0.11</summary>
+  </entry>
+  <entry>
+    <title>OverOps Query 1.0.16</title>
+    <link href='https://plugins.jenkins.io/overops-query' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.overops.plugins:overops-query:1.0.16</id>
+    <published>2018-10-29T15:18:53.053+00:00</published>
+    <updated>2018-10-29T15:18:53.053+00:00</updated>
+    <summary>OverOps Query 1.0.16</summary>
+  </entry>
+  <entry>
+    <title>Pipeline Maven Integration 3.5.15</title>
+    <link href='https://plugins.jenkins.io/pipeline-maven' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:pipeline-maven:3.5.15</id>
+    <published>2018-10-29T09:10:16.654+00:00</published>
+    <updated>2018-10-29T09:10:16.654+00:00</updated>
+    <summary>Pipeline Maven Integration 3.5.15</summary>
+  </entry>
+  <entry>
+    <title>Protecode SC 0.17.3</title>
+    <link href='https://plugins.jenkins.io/protecode-sc' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.synopsys:protecode-sc:0.17.3</id>
+    <published>2018-10-29T18:11:55.516+00:00</published>
+    <updated>2018-10-29T18:11:55.516+00:00</updated>
+    <summary>Protecode SC 0.17.3</summary>
+  </entry>
+  <entry>
+    <title>Snyk Security 1.9.9</title>
+    <link href='https://plugins.jenkins.io/snyk-security-scanner' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.snyk.plugins:snyk-security-scanner:1.9.9</id>
+    <published>2018-10-29T20:30:49.056+00:00</published>
+    <updated>2018-10-29T20:30:49.056+00:00</updated>
+    <summary>Snyk Security 1.9.9</summary>
+  </entry>
+  <entry>
+    <title>Bitbucket Branch Source 2.2.13</title>
+    <link href='https://plugins.jenkins.io/cloudbees-bitbucket-branch-source' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:cloudbees-bitbucket-branch-source:2.2.13</id>
+    <published>2018-10-27T18:33:25.347+00:00</published>
+    <updated>2018-10-27T18:33:25.347+00:00</updated>
+    <summary>Bitbucket Branch Source 2.2.13</summary>
+  </entry>
+  <entry>
+    <title>Content Replace 1.0.2</title>
+    <link href='https://plugins.jenkins.io/content-replace' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:content-replace:1.0.2</id>
+    <published>2018-10-27T07:10:29.241+00:00</published>
+    <updated>2018-10-27T07:10:29.241+00:00</updated>
+    <summary>Content Replace 1.0.2</summary>
+  </entry>
+  <entry>
+    <title>Gerrit Code Review 0.2.1</title>
+    <link href='https://plugins.jenkins.io/gerrit-code-review' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:gerrit-code-review:0.2.1</id>
+    <published>2018-10-27T19:39:35.456+00:00</published>
+    <updated>2018-10-27T19:39:35.456+00:00</updated>
+    <summary>Gerrit Code Review 0.2.1</summary>
+  </entry>
+  <entry>
+    <title>Git Changelog 2.12</title>
+    <link href='https://plugins.jenkins.io/git-changelog' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:de.wellnerbou.jenkins:git-changelog:2.12</id>
+    <published>2018-10-27T06:13:26.813+00:00</published>
+    <updated>2018-10-27T06:13:26.813+00:00</updated>
+    <summary>Git Changelog 2.12</summary>
+  </entry>
+  <entry>
+    <title>RocketChat Notifier 1.3.1</title>
+    <link href='https://plugins.jenkins.io/rocketchatnotifier' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:rocketchatnotifier:1.3.1</id>
+    <published>2018-10-27T09:26:03.948+00:00</published>
+    <updated>2018-10-27T09:26:03.948+00:00</updated>
+    <summary>RocketChat Notifier 1.3.1</summary>
+  </entry>
+  <entry>
+    <title>JIRA 3.0.4</title>
+    <link href='https://plugins.jenkins.io/jira' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:jira:3.0.4</id>
+    <published>2018-10-26T11:04:10.753+00:00</published>
+    <updated>2018-10-26T11:04:10.753+00:00</updated>
+    <summary>JIRA 3.0.4</summary>
+  </entry>
+  <entry>
+    <title>Nexus Platform 3.3.20181025-134249.614c5f4</title>
+    <link href='https://plugins.jenkins.io/nexus-jenkins-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.sonatype.nexus.ci:nexus-jenkins-plugin:3.3.20181025-134249.614c5f4</id>
+    <published>2018-10-26T21:49:47.717+00:00</published>
+    <updated>2018-10-26T21:49:47.717+00:00</updated>
+    <summary>Nexus Platform 3.3.20181025-134249.614c5f4</summary>
+  </entry>
+  <entry>
+    <title>NowSecure Auto 1.2</title>
+    <link href='https://plugins.jenkins.io/nowsecure-auto-security-test' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nowsecure-auto-security-test:1.2</id>
+    <published>2018-10-26T17:10:27.058+00:00</published>
+    <updated>2018-10-26T17:10:27.058+00:00</updated>
+    <summary>NowSecure Auto 1.2</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: API 2.31</title>
+    <link href='https://plugins.jenkins.io/workflow-api' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-api:2.31</id>
+    <published>2018-10-26T19:40:01.104+00:00</published>
+    <updated>2018-10-26T19:40:01.104+00:00</updated>
+    <summary>Pipeline: API 2.31</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Basic Steps 2.12</title>
+    <link href='https://plugins.jenkins.io/workflow-basic-steps' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-basic-steps:2.12</id>
+    <published>2018-10-26T19:54:43.020+00:00</published>
+    <updated>2018-10-26T19:54:43.020+00:00</updated>
+    <summary>Pipeline: Basic Steps 2.12</summary>
+  </entry>
+  <entry>
+    <title>xUnit 2.3.1</title>
+    <link href='https://plugins.jenkins.io/xunit' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:xunit:2.3.1</id>
+    <published>2018-10-26T10:09:01.239+00:00</published>
+    <updated>2018-10-26T10:09:01.239+00:00</updated>
+    <summary>xUnit 2.3.1</summary>
+  </entry>
+  <entry>
+    <title>Acunetix 1.2.0</title>
+    <link href='https://plugins.jenkins.io/acunetix' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.acunetix:acunetix:1.2.0</id>
+    <published>2018-10-25T10:24:29.802+00:00</published>
+    <updated>2018-10-25T10:24:29.802+00:00</updated>
+    <summary>Acunetix 1.2.0</summary>
+  </entry>
+  <entry>
+    <title>OWASP Dependency-Track 1.1.1</title>
+    <link href='https://plugins.jenkins.io/dependency-track' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:dependency-track:1.1.1</id>
+    <published>2018-10-25T04:14:56.407+00:00</published>
+    <updated>2018-10-25T04:14:56.407+00:00</updated>
+    <summary>OWASP Dependency-Track 1.1.1</summary>
+  </entry>
+  <entry>
+    <title>Job Configuration History 2.18.3</title>
+    <link href='https://plugins.jenkins.io/jobConfigHistory' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:jobConfigHistory:2.18.3</id>
+    <published>2018-10-25T05:40:38.884+00:00</published>
+    <updated>2018-10-25T05:40:38.884+00:00</updated>
+    <summary>Job Configuration History 2.18.3</summary>
+  </entry>
+  <entry>
+    <title>Node sharing executor 2.0.3</title>
+    <link href='https://plugins.jenkins.io/node-sharing-executor' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.nodesharing:node-sharing-executor:2.0.3</id>
+    <published>2018-10-25T11:22:51.134+00:00</published>
+    <updated>2018-10-25T11:22:51.134+00:00</updated>
+    <summary>Node sharing executor 2.0.3</summary>
+  </entry>
+  <entry>
+    <title>Node sharing orchestrator 2.0.3</title>
+    <link href='https://plugins.jenkins.io/node-sharing-orchestrator' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.nodesharing:node-sharing-orchestrator:2.0.3</id>
+    <published>2018-10-25T11:22:41.253+00:00</published>
+    <updated>2018-10-25T11:22:41.253+00:00</updated>
+    <summary>Node sharing orchestrator 2.0.3</summary>
+  </entry>
+  <entry>
+    <title>Acunetix 1.1.0</title>
+    <link href='https://plugins.jenkins.io/acunetix' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.acunetix:acunetix:1.1.0</id>
+    <published>2018-10-24T16:08:05.232+00:00</published>
+    <updated>2018-10-24T16:08:05.232+00:00</updated>
+    <summary>Acunetix 1.1.0</summary>
+  </entry>
+  <entry>
+    <title>Amazon Elastic Container Service 1.17</title>
+    <link href='https://plugins.jenkins.io/amazon-ecs' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.cloudbees.jenkins.plugins:amazon-ecs:1.17</id>
+    <published>2018-10-24T14:19:26.353+00:00</published>
+    <updated>2018-10-24T14:19:26.353+00:00</updated>
+    <summary>Amazon Elastic Container Service 1.17</summary>
+  </entry>
+  <entry>
+    <title>Cachet Gate 1.0.3 (new)</title>
+    <link href='https://plugins.jenkins.io/cachet-gating' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:cachet-gating:1.0.3</id>
+    <published>2018-10-24T17:41:03.048+00:00</published>
+    <updated>2018-10-24T17:41:03.048+00:00</updated>
+    <summary>Cachet Gate 1.0.3</summary>
+  </entry>
+  <entry>
+    <title>docker-build-step 2.1</title>
+    <link href='https://plugins.jenkins.io/docker-build-step' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:docker-build-step:2.1</id>
+    <published>2018-10-24T08:27:15.338+00:00</published>
+    <updated>2018-10-24T08:27:15.338+00:00</updated>
+    <summary>docker-build-step 2.1</summary>
+  </entry>
+  <entry>
+    <title>Amazon EC2 1.41</title>
+    <link href='https://plugins.jenkins.io/ec2' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:ec2:1.41</id>
+    <published>2018-10-24T13:21:33.987+00:00</published>
+    <updated>2018-10-24T13:21:33.987+00:00</updated>
+    <summary>Amazon EC2 1.41</summary>
+  </entry>
+  <entry>
+    <title>Kubernetes 1.13.2</title>
+    <link href='https://plugins.jenkins.io/kubernetes' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.csanchez.jenkins.plugins:kubernetes:1.13.2</id>
+    <published>2018-10-24T13:08:52.457+00:00</published>
+    <updated>2018-10-24T13:08:52.457+00:00</updated>
+    <summary>Kubernetes 1.13.2</summary>
+  </entry>
+  <entry>
+    <title>Telegram Bot 1.3.0</title>
+    <link href='https://plugins.jenkins.io/telegram-notifications' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:telegram-notifications:1.3.0</id>
+    <published>2018-10-24T13:26:19.558+00:00</published>
+    <updated>2018-10-24T13:26:19.558+00:00</updated>
+    <summary>Telegram Bot 1.3.0</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Nodes and Processes 2.25</title>
+    <link href='https://plugins.jenkins.io/workflow-durable-task-step' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-durable-task-step:2.25</id>
+    <published>2018-10-24T16:12:20.014+00:00</published>
+    <updated>2018-10-24T16:12:20.014+00:00</updated>
+    <summary>Pipeline: Nodes and Processes 2.25</summary>
+  </entry>
+  <entry>
+    <title>CrossBrowserTesting.com 2.5.6</title>
+    <link href='https://plugins.jenkins.io/crossbrowsertesting' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:crossbrowsertesting:2.5.6</id>
+    <published>2018-10-23T20:25:56.316+00:00</published>
+    <updated>2018-10-23T20:25:56.316+00:00</updated>
+    <summary>CrossBrowserTesting.com 2.5.6</summary>
+  </entry>
+  <entry>
+    <title>Date Parameter 0.0.4</title>
+    <link href='https://plugins.jenkins.io/date-parameter' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:me.leejay.jenkins:date-parameter:0.0.4</id>
+    <published>2018-10-23T00:49:28.896+00:00</published>
+    <updated>2018-10-23T00:49:28.896+00:00</updated>
+    <summary>Date Parameter 0.0.4</summary>
+  </entry>
+  <entry>
+    <title>XebiaLabs XL Deploy 7.5.2</title>
+    <link href='https://plugins.jenkins.io/deployit-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.xebialabs.deployit.ci:deployit-plugin:7.5.2</id>
+    <published>2018-10-23T05:37:25.183+00:00</published>
+    <updated>2018-10-23T05:37:25.183+00:00</updated>
+    <summary>XebiaLabs XL Deploy 7.5.2</summary>
+  </entry>
+  <entry>
+    <title>Gerrit Code Review 0.2</title>
+    <link href='https://plugins.jenkins.io/gerrit-code-review' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:gerrit-code-review:0.2</id>
+    <published>2018-10-23T20:51:27.247+00:00</published>
+    <updated>2018-10-23T20:51:27.247+00:00</updated>
+    <summary>Gerrit Code Review 0.2</summary>
+  </entry>
+  <entry>
+    <title>Habitat Executor 0.5.2</title>
+    <link href='https://plugins.jenkins.io/habitat' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.indellient:habitat:0.5.2</id>
+    <published>2018-10-23T15:28:48.560+00:00</published>
+    <updated>2018-10-23T15:28:48.560+00:00</updated>
+    <summary>Habitat Executor 0.5.2</summary>
+  </entry>
+  <entry>
+    <title>Kubernetes 1.13.1</title>
+    <link href='https://plugins.jenkins.io/kubernetes' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.csanchez.jenkins.plugins:kubernetes:1.13.1</id>
+    <published>2018-10-23T09:17:24.540+00:00</published>
+    <updated>2018-10-23T09:17:24.540+00:00</updated>
+    <summary>Kubernetes 1.13.1</summary>
+  </entry>
+  <entry>
+    <title>Phabricator Differential 2.0.1</title>
+    <link href='https://plugins.jenkins.io/phabricator-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:phabricator-plugin:2.0.1</id>
+    <published>2018-10-23T15:02:44.594+00:00</published>
+    <updated>2018-10-23T15:02:44.594+00:00</updated>
+    <summary>Phabricator Differential 2.0.1</summary>
+  </entry>
+  <entry>
+    <title>TestComplete support 2.0</title>
+    <link href='https://plugins.jenkins.io/TestComplete' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:TestComplete:2.0</id>
+    <published>2018-10-22T09:29:31.514+00:00</published>
+    <updated>2018-10-22T09:29:31.514+00:00</updated>
+    <summary>TestComplete support 2.0</summary>
+  </entry>
+  <entry>
+    <title>Alauda DevOps Sync 0.2.22</title>
+    <link href='https://plugins.jenkins.io/alauda-devops-sync' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.alauda.jenkins.plugins:alauda-devops-sync:0.2.22</id>
+    <published>2018-10-22T07:45:43.191+00:00</published>
+    <updated>2018-10-22T07:45:43.191+00:00</updated>
+    <summary>Alauda DevOps Sync 0.2.22</summary>
+  </entry>
+  <entry>
+    <title>Aqua Security Scanner 3.0.12</title>
+    <link href='https://plugins.jenkins.io/aqua-security-scanner' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:aqua-security-scanner:3.0.12</id>
+    <published>2018-10-22T14:39:53.254+00:00</published>
+    <updated>2018-10-22T14:39:53.254+00:00</updated>
+    <summary>Aqua Security Scanner 3.0.12</summary>
+  </entry>
+  <entry>
+    <title>Black Duck Detect 1.5.0</title>
+    <link href='https://plugins.jenkins.io/blackduck-detect' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.blackducksoftware.integration:blackduck-detect:1.5.0</id>
+    <published>2018-10-22T16:55:19.951+00:00</published>
+    <updated>2018-10-22T16:55:19.951+00:00</updated>
+    <summary>Black Duck Detect 1.5.0</summary>
+  </entry>
+  <entry>
+    <title>Build Timestamp 1.0.3</title>
+    <link href='https://plugins.jenkins.io/build-timestamp' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:build-timestamp:1.0.3</id>
+    <published>2018-10-22T05:03:40.426+00:00</published>
+    <updated>2018-10-22T05:03:40.426+00:00</updated>
+    <summary>Build Timestamp 1.0.3</summary>
+  </entry>
+  <entry>
+    <title>Datadog 0.6.4</title>
+    <link href='https://plugins.jenkins.io/datadog' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.datadog.jenkins.plugins:datadog:0.6.4</id>
+    <published>2018-10-22T20:45:28.727+00:00</published>
+    <updated>2018-10-22T20:45:28.727+00:00</updated>
+    <summary>Datadog 0.6.4</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Nodes and Processes 2.23</title>
+    <link href='https://plugins.jenkins.io/workflow-durable-task-step' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-durable-task-step:2.23</id>
+    <published>2018-10-22T21:31:24.063+00:00</published>
+    <updated>2018-10-22T21:31:24.063+00:00</updated>
+    <summary>Pipeline: Nodes and Processes 2.23</summary>
+  </entry>
+  <entry>
+    <title>Snyk Security 1.9.8</title>
+    <link href='https://plugins.jenkins.io/snyk-security-scanner' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.snyk.plugins:snyk-security-scanner:1.9.8</id>
+    <published>2018-10-21T07:37:53.321+00:00</published>
+    <updated>2018-10-21T07:37:53.321+00:00</updated>
+    <summary>Snyk Security 1.9.8</summary>
+  </entry>
+  <entry>
+    <title>White Source 18.10.1</title>
+    <link href='https://plugins.jenkins.io/whitesource' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:whitesource:18.10.1</id>
+    <published>2018-10-21T06:14:01.620+00:00</published>
+    <updated>2018-10-21T06:14:01.620+00:00</updated>
+    <summary>White Source 18.10.1</summary>
+  </entry>
+  <entry>
+    <title>Cucumber reports 4.1.0</title>
+    <link href='https://plugins.jenkins.io/cucumber-reports' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:net.masterthought.jenkins:cucumber-reports:4.1.0</id>
+    <published>2018-10-20T20:17:34.868+00:00</published>
+    <updated>2018-10-20T20:17:34.868+00:00</updated>
+    <summary>Cucumber reports 4.1.0</summary>
+  </entry>
+  <entry>
+    <title>Remoting Kafka 1.1.3</title>
+    <link href='https://plugins.jenkins.io/remoting-kafka' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins.remoting-kafka:remoting-kafka:1.1.3</id>
+    <published>2018-10-20T16:18:40.744+00:00</published>
+    <updated>2018-10-20T16:18:40.744+00:00</updated>
+    <summary>Remoting Kafka 1.1.3</summary>
+  </entry>
+  <entry>
+    <title>Active Directory 2.9</title>
+    <link href='https://plugins.jenkins.io/active-directory' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:active-directory:2.9</id>
+    <published>2018-10-19T12:46:52.606+00:00</published>
+    <updated>2018-10-19T12:46:52.606+00:00</updated>
+    <summary>Active Directory 2.9</summary>
+  </entry>
+  <entry>
+    <title>Azure App Service 0.4.1</title>
+    <link href='https://plugins.jenkins.io/azure-app-service' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:azure-app-service:0.4.1</id>
+    <published>2018-10-19T06:37:21.768+00:00</published>
+    <updated>2018-10-19T06:37:21.768+00:00</updated>
+    <summary>Azure App Service 0.4.1</summary>
+  </entry>
+  <entry>
+    <title>Configuration as Code 1.2</title>
+    <link href='https://plugins.jenkins.io/configuration-as-code' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins:configuration-as-code:1.2</id>
+    <published>2018-10-19T13:46:21.721+00:00</published>
+    <updated>2018-10-19T13:46:21.721+00:00</updated>
+    <summary>Configuration as Code 1.2</summary>
+  </entry>
+  <entry>
+    <title>Configuration as Code Support 1.2</title>
+    <link href='https://plugins.jenkins.io/configuration-as-code-support' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.configuration-as-code:configuration-as-code-support:1.2</id>
+    <published>2018-10-19T13:46:37.984+00:00</published>
+    <updated>2018-10-19T13:46:37.984+00:00</updated>
+    <summary>Configuration as Code Support 1.2</summary>
+  </entry>
+  <entry>
+    <title>Cucumber Living Documentation 2.2.2</title>
+    <link href='https://plugins.jenkins.io/cucumber-living-documentation' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:cucumber-living-documentation:2.2.2</id>
+    <published>2018-10-19T15:51:25.834+00:00</published>
+    <updated>2018-10-19T15:51:25.834+00:00</updated>
+    <summary>Cucumber Living Documentation 2.2.2</summary>
+  </entry>
+  <entry>
+    <title>OWASP Dependency-Track 1.1.0</title>
+    <link href='https://plugins.jenkins.io/dependency-track' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:dependency-track:1.1.0</id>
+    <published>2018-10-19T02:27:18.361+00:00</published>
+    <updated>2018-10-19T02:27:18.361+00:00</updated>
+    <summary>OWASP Dependency-Track 1.1.0</summary>
+  </entry>
+  <entry>
+    <title>Kubernetes 1.13.0</title>
+    <link href='https://plugins.jenkins.io/kubernetes' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.csanchez.jenkins.plugins:kubernetes:1.13.0</id>
+    <published>2018-10-19T18:23:38.303+00:00</published>
+    <updated>2018-10-19T18:23:38.303+00:00</updated>
+    <summary>Kubernetes 1.13.0</summary>
+  </entry>
+  <entry>
+    <title>Mailer 1.22</title>
+    <link href='https://plugins.jenkins.io/mailer' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:mailer:1.22</id>
+    <published>2018-10-19T14:05:55.603+00:00</published>
+    <updated>2018-10-19T14:05:55.603+00:00</updated>
+    <summary>Mailer 1.22</summary>
+  </entry>
+  <entry>
+    <title>NodePool Agents 0.0.16</title>
+    <link href='https://plugins.jenkins.io/nodepool-agents' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:nodepool-agents:0.0.16</id>
+    <published>2018-10-19T15:45:33.379+00:00</published>
+    <updated>2018-10-19T15:45:33.379+00:00</updated>
+    <summary>NodePool Agents 0.0.16</summary>
+  </entry>
+  <entry>
+    <title>OpsGenie 1.5 (new)</title>
+    <link href='https://plugins.jenkins.io/opsgenie' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:opsgenie:1.5</id>
+    <published>2018-10-19T08:31:51.172+00:00</published>
+    <updated>2018-10-19T08:31:51.172+00:00</updated>
+    <summary>OpsGenie 1.5</summary>
+  </entry>
+  <entry>
+    <title>OverOps Query 1.0.13</title>
+    <link href='https://plugins.jenkins.io/overops-query' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.overops.plugins:overops-query:1.0.13</id>
+    <published>2018-10-19T14:13:40.550+00:00</published>
+    <updated>2018-10-19T14:13:40.550+00:00</updated>
+    <summary>OverOps Query 1.0.13</summary>
+  </entry>
+  <entry>
+    <title>Phabricator Differential 2.0.0</title>
+    <link href='https://plugins.jenkins.io/phabricator-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:phabricator-plugin:2.0.0</id>
+    <published>2018-10-19T01:06:01.396+00:00</published>
+    <updated>2018-10-19T01:06:01.396+00:00</updated>
+    <summary>Phabricator Differential 2.0.0</summary>
+  </entry>
+  <entry>
+    <title>Snyk Security 1.9.7</title>
+    <link href='https://plugins.jenkins.io/snyk-security-scanner' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.snyk.plugins:snyk-security-scanner:1.9.7</id>
+    <published>2018-10-19T08:22:38.925+00:00</published>
+    <updated>2018-10-19T08:22:38.925+00:00</updated>
+    <summary>Snyk Security 1.9.7</summary>
+  </entry>
+  <entry>
+    <title>View Job Filters 2.0.4</title>
+    <link href='https://plugins.jenkins.io/view-job-filters' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:view-job-filters:2.0.4</id>
+    <published>2018-10-19T16:31:01.388+00:00</published>
+    <updated>2018-10-19T16:31:01.388+00:00</updated>
+    <summary>View Job Filters 2.0.4</summary>
+  </entry>
+  <entry>
+    <title>Azure VM Agents 0.7.4</title>
+    <link href='https://plugins.jenkins.io/azure-vm-agents' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:azure-vm-agents:0.7.4</id>
+    <published>2018-10-18T07:34:30.631+00:00</published>
+    <updated>2018-10-18T07:34:30.631+00:00</updated>
+    <summary>Azure VM Agents 0.7.4</summary>
+  </entry>
+  <entry>
+    <title>CA Service Virtualization 1.0.2</title>
+    <link href='https://plugins.jenkins.io/ca-service-virtualization' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:ca-service-virtualization:1.0.2</id>
+    <published>2018-10-18T11:07:33.677+00:00</published>
+    <updated>2018-10-18T11:07:33.677+00:00</updated>
+    <summary>CA Service Virtualization 1.0.2</summary>
+  </entry>
+  <entry>
+    <title>Node sharing executor 2.0.2</title>
+    <link href='https://plugins.jenkins.io/node-sharing-executor' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.nodesharing:node-sharing-executor:2.0.2</id>
+    <published>2018-10-18T09:33:22.662+00:00</published>
+    <updated>2018-10-18T09:33:22.662+00:00</updated>
+    <summary>Node sharing executor 2.0.2</summary>
+  </entry>
+  <entry>
+    <title>Node sharing orchestrator 2.0.2</title>
+    <link href='https://plugins.jenkins.io/node-sharing-orchestrator' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.nodesharing:node-sharing-orchestrator:2.0.2</id>
+    <published>2018-10-18T09:33:12.644+00:00</published>
+    <updated>2018-10-18T09:33:12.644+00:00</updated>
+    <summary>Node sharing orchestrator 2.0.2</summary>
+  </entry>
+  <entry>
+    <title>NodeJS 1.2.7</title>
+    <link href='https://plugins.jenkins.io/nodejs' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:nodejs:1.2.7</id>
+    <published>2018-10-18T09:37:12.843+00:00</published>
+    <updated>2018-10-18T09:37:12.843+00:00</updated>
+    <summary>NodeJS 1.2.7</summary>
+  </entry>
+  <entry>
+    <title>NowSecure Auto 1.1</title>
+    <link href='https://plugins.jenkins.io/nowsecure-auto-security-test' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:nowsecure-auto-security-test:1.1</id>
+    <published>2018-10-18T18:33:01.689+00:00</published>
+    <updated>2018-10-18T18:33:01.689+00:00</updated>
+    <summary>NowSecure Auto 1.1</summary>
+  </entry>
+  <entry>
+    <title>Script Security 1.44.1</title>
+    <link href='https://plugins.jenkins.io/script-security' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:script-security:1.44.1</id>
+    <published>2018-10-18T01:37:10.671+00:00</published>
+    <updated>2018-10-18T01:37:10.671+00:00</updated>
+    <summary>Script Security 1.44.1</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Groovy 2.46.1</title>
+    <link href='https://plugins.jenkins.io/workflow-cps' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-cps:2.46.1</id>
+    <published>2018-10-18T02:26:15.134+00:00</published>
+    <updated>2018-10-18T02:26:15.134+00:00</updated>
+    <summary>Pipeline: Groovy 2.46.1</summary>
+  </entry>
+  <entry>
+    <title>Contrast Continuous Application Security 2.8</title>
+    <link href='https://plugins.jenkins.io/contrast-continuous-application-security' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:contrast-continuous-application-security:2.8</id>
+    <published>2018-10-17T22:44:06.946+00:00</published>
+    <updated>2018-10-17T22:44:06.946+00:00</updated>
+    <summary>Contrast Continuous Application Security 2.8</summary>
+  </entry>
+  <entry>
+    <title>Google Cloud Build 0.2.2</title>
+    <link href='https://plugins.jenkins.io/google-cloudbuild' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:google-cloudbuild:0.2.2</id>
+    <published>2018-10-17T19:02:13.383+00:00</published>
+    <updated>2018-10-17T19:02:13.383+00:00</updated>
+    <summary>Google Cloud Build 0.2.2</summary>
+  </entry>
+  <entry>
+    <title>Kubernetes 1.12.8</title>
+    <link href='https://plugins.jenkins.io/kubernetes' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.csanchez.jenkins.plugins:kubernetes:1.12.8</id>
+    <published>2018-10-17T11:33:31.887+00:00</published>
+    <updated>2018-10-17T11:33:31.887+00:00</updated>
+    <summary>Kubernetes 1.12.8</summary>
+  </entry>
+  <entry>
+    <title>Remoting Kafka 1.1.2</title>
+    <link href='https://plugins.jenkins.io/remoting-kafka' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins.remoting-kafka:remoting-kafka:1.1.2</id>
+    <published>2018-10-17T14:10:13.781+00:00</published>
+    <updated>2018-10-17T14:10:13.781+00:00</updated>
+    <summary>Remoting Kafka 1.1.2</summary>
+  </entry>
+  <entry>
+    <title>SCM API 2.3.0</title>
+    <link href='https://plugins.jenkins.io/scm-api' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:scm-api:2.3.0</id>
+    <published>2018-10-17T09:20:20.425+00:00</published>
+    <updated>2018-10-17T09:20:20.425+00:00</updated>
+    <summary>SCM API 2.3.0</summary>
+  </entry>
+  <entry>
+    <title>Script Security 1.47</title>
+    <link href='https://plugins.jenkins.io/script-security' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:script-security:1.47</id>
+    <published>2018-10-17T21:43:11.232+00:00</published>
+    <updated>2018-10-17T21:43:11.232+00:00</updated>
+    <summary>Script Security 1.47</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Groovy 2.59</title>
+    <link href='https://plugins.jenkins.io/workflow-cps' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-cps:2.59</id>
+    <published>2018-10-17T21:21:06.934+00:00</published>
+    <updated>2018-10-17T21:21:06.934+00:00</updated>
+    <summary>Pipeline: Groovy 2.59</summary>
+  </entry>
+  <entry>
+    <title>Workspace Cleanup 0.36</title>
+    <link href='https://plugins.jenkins.io/ws-cleanup' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:ws-cleanup:0.36</id>
+    <published>2018-10-17T06:52:13.173+00:00</published>
+    <updated>2018-10-17T06:52:13.173+00:00</updated>
+    <summary>Workspace Cleanup 0.36</summary>
+  </entry>
+  <entry>
+    <title>Alauda DevOps Sync 0.2.21</title>
+    <link href='https://plugins.jenkins.io/alauda-devops-sync' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.alauda.jenkins.plugins:alauda-devops-sync:0.2.21</id>
+    <published>2018-10-16T09:51:46.694+00:00</published>
+    <updated>2018-10-16T09:51:46.694+00:00</updated>
+    <summary>Alauda DevOps Sync 0.2.21</summary>
+  </entry>
+  <entry>
+    <title>AWS CodeBuild 0.32</title>
+    <link href='https://plugins.jenkins.io/aws-codebuild' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.amazonaws:aws-codebuild:0.32</id>
+    <published>2018-10-16T21:55:06.858+00:00</published>
+    <updated>2018-10-16T21:55:06.858+00:00</updated>
+    <summary>AWS CodeBuild 0.32</summary>
+  </entry>
+  <entry>
+    <title>JIRA 3.0.3</title>
+    <link href='https://plugins.jenkins.io/jira' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:jira:3.0.3</id>
+    <published>2018-10-16T01:38:58.602+00:00</published>
+    <updated>2018-10-16T01:38:58.602+00:00</updated>
+    <summary>JIRA 3.0.3</summary>
+  </entry>
+  <entry>
+    <title>OpenShift Client 1.0.21</title>
+    <link href='https://plugins.jenkins.io/openshift-client' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.openshift.jenkins.plugins:openshift-client:1.0.21</id>
+    <published>2018-10-16T17:14:15.868+00:00</published>
+    <updated>2018-10-16T17:14:15.868+00:00</updated>
+    <summary>OpenShift Client 1.0.21</summary>
+  </entry>
+  <entry>
+    <title>Snyk Security 1.9.6</title>
+    <link href='https://plugins.jenkins.io/snyk-security-scanner' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.snyk.plugins:snyk-security-scanner:1.9.6</id>
+    <published>2018-10-16T19:24:23.366+00:00</published>
+    <updated>2018-10-16T19:24:23.366+00:00</updated>
+    <summary>Snyk Security 1.9.6</summary>
+  </entry>
+  <entry>
+    <title>Bitbar Run-in-Cloud 2.64.0</title>
+    <link href='https://plugins.jenkins.io/testdroid-run-in-cloud' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:testdroid:testdroid-run-in-cloud:2.64.0</id>
+    <published>2018-10-16T09:43:45.580+00:00</published>
+    <updated>2018-10-16T09:43:45.580+00:00</updated>
+    <summary>Bitbar Run-in-Cloud 2.64.0</summary>
+  </entry>
+  <entry>
+    <title>View Job Filters 2.0.3</title>
+    <link href='https://plugins.jenkins.io/view-job-filters' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:view-job-filters:2.0.3</id>
+    <published>2018-10-16T17:02:49.446+00:00</published>
+    <updated>2018-10-16T17:02:49.446+00:00</updated>
+    <summary>View Job Filters 2.0.3</summary>
+  </entry>
+  <entry>
+    <title>GitHub Branch Source 2.4.1</title>
+    <link href='https://plugins.jenkins.io/github-branch-source' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:github-branch-source:2.4.1</id>
+    <published>2018-10-15T10:46:18.895+00:00</published>
+    <updated>2018-10-15T10:46:18.895+00:00</updated>
+    <summary>GitHub Branch Source 2.4.1</summary>
+  </entry>
+  <entry>
+    <title>IBM Application Security on Cloud 1.2.2</title>
+    <link href='https://plugins.jenkins.io/ibm-application-security' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.ibm:ibm-application-security:1.2.2</id>
+    <published>2018-10-15T14:39:59.368+00:00</published>
+    <updated>2018-10-15T14:39:59.368+00:00</updated>
+    <summary>IBM Application Security on Cloud 1.2.2</summary>
+  </entry>
+  <entry>
+    <title>Amazon S3 Bucket Credentials 0.2.3</title>
+    <link href='https://plugins.jenkins.io/aws-bucket-credentials' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:uk.co.stevegal:aws-bucket-credentials:0.2.3</id>
+    <published>2018-10-14T16:03:39.845+00:00</published>
+    <updated>2018-10-14T16:03:39.845+00:00</updated>
+    <summary>Amazon S3 Bucket Credentials 0.2.3</summary>
+  </entry>
+  <entry>
+    <title>SAML 1.1.0</title>
+    <link href='https://plugins.jenkins.io/saml' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:saml:1.1.0</id>
+    <published>2018-10-14T22:02:11.191+00:00</published>
+    <updated>2018-10-14T22:02:11.191+00:00</updated>
+    <summary>SAML 1.1.0</summary>
+  </entry>
+  <entry>
+    <title>Alauda DevOps Sync 0.2.20</title>
+    <link href='https://plugins.jenkins.io/alauda-devops-sync' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.alauda.jenkins.plugins:alauda-devops-sync:0.2.20</id>
+    <published>2018-10-13T14:47:12.875+00:00</published>
+    <updated>2018-10-13T14:47:12.875+00:00</updated>
+    <summary>Alauda DevOps Sync 0.2.20</summary>
+  </entry>
+  <entry>
+    <title>Alauda Pipeline 1.2</title>
+    <link href='https://plugins.jenkins.io/alauda-pipeline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.alauda.jenkins.plugins:alauda-pipeline:1.2</id>
+    <published>2018-10-13T01:14:10.994+00:00</published>
+    <updated>2018-10-13T01:14:10.994+00:00</updated>
+    <summary>Alauda Pipeline 1.2</summary>
+  </entry>
+  <entry>
+    <title>HUAWEICloud Credentials 1.0.0 (new)</title>
+    <link href='https://plugins.jenkins.io/huaweicloud-credentials' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:huaweicloud-credentials:1.0.0</id>
+    <published>2018-10-12T02:01:34.584+00:00</published>
+    <updated>2018-10-12T02:01:34.584+00:00</updated>
+    <summary>HUAWEICloud Credentials 1.0.0</summary>
+  </entry>
+  <entry>
+    <title>JMH Report 0.9.0</title>
+    <link href='https://plugins.jenkins.io/jmh-report' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.morethan.jenkins:jmh-report:0.9.0</id>
+    <published>2018-10-12T10:28:23.289+00:00</published>
+    <updated>2018-10-12T10:28:23.289+00:00</updated>
+    <summary>JMH Report 0.9.0</summary>
+  </entry>
+  <entry>
+    <title>Oracle Cloud Infrastructure Compute 1.0.3</title>
+    <link href='https://plugins.jenkins.io/oracle-cloud-infrastructure-compute' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:oracle-cloud-infrastructure-compute:1.0.3</id>
+    <published>2018-10-12T05:30:57.022+00:00</published>
+    <updated>2018-10-12T05:30:57.022+00:00</updated>
+    <summary>Oracle Cloud Infrastructure Compute 1.0.3</summary>
+  </entry>
+  <entry>
+    <title>OverOps Query 1.0.12</title>
+    <link href='https://plugins.jenkins.io/overops-query' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.overops.plugins:overops-query:1.0.12</id>
+    <published>2018-10-12T14:59:15.078+00:00</published>
+    <updated>2018-10-12T14:59:15.078+00:00</updated>
+    <summary>OverOps Query 1.0.12</summary>
+  </entry>
+  <entry>
+    <title>RadarGun 1.6</title>
+    <link href='https://plugins.jenkins.io/radargun' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:radargun:1.6</id>
+    <published>2018-10-12T08:53:25.190+00:00</published>
+    <updated>2018-10-12T08:53:25.190+00:00</updated>
+    <summary>RadarGun 1.6</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: API 2.30</title>
+    <link href='https://plugins.jenkins.io/workflow-api' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-api:2.30</id>
+    <published>2018-10-12T13:52:47.081+00:00</published>
+    <updated>2018-10-12T13:52:47.081+00:00</updated>
+    <summary>Pipeline: API 2.30</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Groovy 2.58</title>
+    <link href='https://plugins.jenkins.io/workflow-cps' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-cps:2.58</id>
+    <published>2018-10-12T15:00:47.505+00:00</published>
+    <updated>2018-10-12T15:00:47.505+00:00</updated>
+    <summary>Pipeline: Groovy 2.58</summary>
+  </entry>
+  <entry>
+    <title>Pipeline: Supporting APIs 2.21</title>
+    <link href='https://plugins.jenkins.io/workflow-support' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins.workflow:workflow-support:2.21</id>
+    <published>2018-10-12T14:01:20.303+00:00</published>
+    <updated>2018-10-12T14:01:20.303+00:00</updated>
+    <summary>Pipeline: Supporting APIs 2.21</summary>
+  </entry>
+  <entry>
+    <title>AbsInt Astrée 1.0.8</title>
+    <link href='https://plugins.jenkins.io/absint-astree' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:absint-astree:1.0.8</id>
+    <published>2018-10-11T07:01:39.115+00:00</published>
+    <updated>2018-10-11T07:01:39.115+00:00</updated>
+    <summary>AbsInt Astrée 1.0.8</summary>
+  </entry>
+  <entry>
+    <title>Alauda DevOps Sync 0.2.19</title>
+    <link href='https://plugins.jenkins.io/alauda-devops-sync' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.alauda.jenkins.plugins:alauda-devops-sync:0.2.19</id>
+    <published>2018-10-11T08:57:33.347+00:00</published>
+    <updated>2018-10-11T08:57:33.347+00:00</updated>
+    <summary>Alauda DevOps Sync 0.2.19</summary>
+  </entry>
+  <entry>
+    <title>AWS CodeCommit Trigger 2.0.6</title>
+    <link href='https://plugins.jenkins.io/aws-codecommit-trigger' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:aws-codecommit-trigger:2.0.6</id>
+    <published>2018-10-11T07:35:34.523+00:00</published>
+    <updated>2018-10-11T07:35:34.523+00:00</updated>
+    <summary>AWS CodeCommit Trigger 2.0.6</summary>
+  </entry>
+  <entry>
+    <title>Bitbucket Pullrequest Builder 1.4.28</title>
+    <link href='https://plugins.jenkins.io/bitbucket-pullrequest-builder' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:bitbucket-pullrequest-builder:1.4.28</id>
+    <published>2018-10-11T19:50:55.031+00:00</published>
+    <updated>2018-10-11T19:50:55.031+00:00</updated>
+    <summary>Bitbucket Pullrequest Builder 1.4.28</summary>
+  </entry>
+  <entry>
+    <title>Config File Provider 3.3</title>
+    <link href='https://plugins.jenkins.io/config-file-provider' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:config-file-provider:3.3</id>
+    <published>2018-10-11T09:28:17.406+00:00</published>
+    <updated>2018-10-11T09:28:17.406+00:00</updated>
+    <summary>Config File Provider 3.3</summary>
+  </entry>
+  <entry>
+    <title>Cucumber reports 4.0.1</title>
+    <link href='https://plugins.jenkins.io/cucumber-reports' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:net.masterthought.jenkins:cucumber-reports:4.0.1</id>
+    <published>2018-10-11T20:15:43.033+00:00</published>
+    <updated>2018-10-11T20:15:43.033+00:00</updated>
+    <summary>Cucumber reports 4.0.1</summary>
+  </entry>
+  <entry>
+    <title>Kubernetes 1.12.7</title>
+    <link href='https://plugins.jenkins.io/kubernetes' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.csanchez.jenkins.plugins:kubernetes:1.12.7</id>
+    <published>2018-10-11T07:31:05.892+00:00</published>
+    <updated>2018-10-11T07:31:05.892+00:00</updated>
+    <summary>Kubernetes 1.12.7</summary>
+  </entry>
+  <entry>
+    <title>OpenShift Sync 0.1.24.1</title>
+    <link href='https://plugins.jenkins.io/openshift-sync' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.fabric8.jenkins.plugins:openshift-sync:0.1.24.1</id>
+    <published>2018-10-11T21:17:04.700+00:00</published>
+    <updated>2018-10-11T21:17:04.700+00:00</updated>
+    <summary>OpenShift Sync 0.1.24.1</summary>
+  </entry>
+  <entry>
+    <title>OverOps Query 1.0.11</title>
+    <link href='https://plugins.jenkins.io/overops-query' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.overops.plugins:overops-query:1.0.11</id>
+    <published>2018-10-11T14:53:20.156+00:00</published>
+    <updated>2018-10-11T14:53:20.156+00:00</updated>
+    <summary>OverOps Query 1.0.11</summary>
+  </entry>
+  <entry>
+    <title>Quality Clouds Scan 1.0.1 (new)</title>
+    <link href='https://plugins.jenkins.io/qualityclouds' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:qualityclouds:1.0.1</id>
+    <published>2018-10-11T11:56:18.489+00:00</published>
+    <updated>2018-10-11T11:56:18.489+00:00</updated>
+    <summary>Quality Clouds Scan 1.0.1</summary>
+  </entry>
+  <entry>
+    <title>Workspace Cleanup 0.35</title>
+    <link href='https://plugins.jenkins.io/ws-cleanup' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:ws-cleanup:0.35</id>
+    <published>2018-10-11T08:34:43.950+00:00</published>
+    <updated>2018-10-11T08:34:43.950+00:00</updated>
+    <summary>Workspace Cleanup 0.35</summary>
+  </entry>
+  <entry>
+    <title>Anka 1.17</title>
+    <link href='https://plugins.jenkins.io/anka-build' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:anka-build:1.17</id>
+    <published>2018-10-10T13:44:59.533+00:00</published>
+    <updated>2018-10-10T13:44:59.533+00:00</updated>
+    <summary>Anka 1.17</summary>
+  </entry>
+  <entry>
+    <title>Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean:1.9.0</id>
+    <published>2018-10-10T19:39:14.426+00:00</published>
+    <updated>2018-10-10T19:39:14.426+00:00</updated>
+    <summary>Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Bitbucket Pipeline for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-bitbucket-pipeline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-bitbucket-pipeline:1.9.0</id>
+    <published>2018-10-10T19:36:30.990+00:00</published>
+    <updated>2018-10-10T19:36:30.990+00:00</updated>
+    <summary>Bitbucket Pipeline for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Common API for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-commons' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-commons:1.9.0</id>
+    <published>2018-10-10T19:27:36.153+00:00</published>
+    <updated>2018-10-10T19:27:36.153+00:00</updated>
+    <summary>Common API for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Config API for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-config' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-config:1.9.0</id>
+    <published>2018-10-10T19:35:53.087+00:00</published>
+    <updated>2018-10-10T19:35:53.087+00:00</updated>
+    <summary>Config API for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Blue Ocean Core JS 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-core-js' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-core-js:1.9.0</id>
+    <published>2018-10-10T19:27:26.632+00:00</published>
+    <updated>2018-10-10T19:27:26.632+00:00</updated>
+    <summary>Blue Ocean Core JS 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Dashboard for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-dashboard' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-dashboard:1.9.0</id>
+    <published>2018-10-10T19:33:25.841+00:00</published>
+    <updated>2018-10-10T19:33:25.841+00:00</updated>
+    <summary>Dashboard for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Events API for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-events' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-events:1.9.0</id>
+    <published>2018-10-10T19:30:27.488+00:00</published>
+    <updated>2018-10-10T19:30:27.488+00:00</updated>
+    <summary>Events API for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Git Pipeline for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-git-pipeline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-git-pipeline:1.9.0</id>
+    <published>2018-10-10T19:36:14.227+00:00</published>
+    <updated>2018-10-10T19:36:14.227+00:00</updated>
+    <summary>Git Pipeline for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>GitHub Pipeline for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-github-pipeline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-github-pipeline:1.9.0</id>
+    <published>2018-10-10T19:36:01.660+00:00</published>
+    <updated>2018-10-10T19:36:01.660+00:00</updated>
+    <summary>GitHub Pipeline for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>i18n for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-i18n' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-i18n:1.9.0</id>
+    <published>2018-10-10T19:27:48.200+00:00</published>
+    <updated>2018-10-10T19:27:48.200+00:00</updated>
+    <summary>i18n for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>JIRA Integration for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-jira' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-jira:1.9.0</id>
+    <published>2018-10-10T19:39:04.960+00:00</published>
+    <updated>2018-10-10T19:39:04.960+00:00</updated>
+    <summary>JIRA Integration for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>JWT for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-jwt' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-jwt:1.9.0</id>
+    <published>2018-10-10T19:29:46.816+00:00</published>
+    <updated>2018-10-10T19:29:46.816+00:00</updated>
+    <summary>JWT for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Personalization for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-personalization' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-personalization:1.9.0</id>
+    <published>2018-10-10T19:35:09.700+00:00</published>
+    <updated>2018-10-10T19:35:09.700+00:00</updated>
+    <summary>Personalization for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Pipeline implementation for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-pipeline-api-impl' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-pipeline-api-impl:1.9.0</id>
+    <published>2018-10-10T19:30:14.733+00:00</published>
+    <updated>2018-10-10T19:30:14.733+00:00</updated>
+    <summary>Pipeline implementation for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Blue Ocean Pipeline Editor 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-pipeline-editor' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-pipeline-editor:1.9.0</id>
+    <published>2018-10-10T19:38:57.915+00:00</published>
+    <updated>2018-10-10T19:38:57.915+00:00</updated>
+    <summary>Blue Ocean Pipeline Editor 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Pipeline SCM API for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-pipeline-scm-api' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-pipeline-scm-api:1.9.0</id>
+    <published>2018-10-10T19:29:41.145+00:00</published>
+    <updated>2018-10-10T19:29:41.145+00:00</updated>
+    <summary>Pipeline SCM API for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>REST API for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-rest' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-rest:1.9.0</id>
+    <published>2018-10-10T19:27:43.527+00:00</published>
+    <updated>2018-10-10T19:27:43.527+00:00</updated>
+    <summary>REST API for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>REST Implementation for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-rest-impl' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-rest-impl:1.9.0</id>
+    <published>2018-10-10T19:29:59.070+00:00</published>
+    <updated>2018-10-10T19:29:59.070+00:00</updated>
+    <summary>REST Implementation for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>Web for Blue Ocean 1.9.0</title>
+    <link href='https://plugins.jenkins.io/blueocean-web' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:blueocean-web:1.9.0</id>
+    <published>2018-10-10T19:29:34.548+00:00</published>
+    <updated>2018-10-10T19:29:34.548+00:00</updated>
+    <summary>Web for Blue Ocean 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>CodeScene 1.1.3</title>
+    <link href='https://plugins.jenkins.io/codescene' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:codescene:1.1.3</id>
+    <published>2018-10-10T11:45:03.066+00:00</published>
+    <updated>2018-10-10T11:45:03.066+00:00</updated>
+    <summary>CodeScene 1.1.3</summary>
+  </entry>
+  <entry>
+    <title>Cucumber reports 4.0.0</title>
+    <link href='https://plugins.jenkins.io/cucumber-reports' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:net.masterthought.jenkins:cucumber-reports:4.0.0</id>
+    <published>2018-10-10T18:30:15.849+00:00</published>
+    <updated>2018-10-10T18:30:15.849+00:00</updated>
+    <summary>Cucumber reports 4.0.0</summary>
+  </entry>
+  <entry>
+    <title>Habitat Executor 0.5.0</title>
+    <link href='https://plugins.jenkins.io/habitat' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.indellient:habitat:0.5.0</id>
+    <published>2018-10-10T14:40:28.466+00:00</published>
+    <updated>2018-10-10T14:40:28.466+00:00</updated>
+    <summary>Habitat Executor 0.5.0</summary>
+  </entry>
+  <entry>
+    <title>Design Language 1.9.0</title>
+    <link href='https://plugins.jenkins.io/jenkins-design-language' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.blueocean:jenkins-design-language:1.9.0</id>
+    <published>2018-10-10T19:25:08.483+00:00</published>
+    <updated>2018-10-10T19:25:08.483+00:00</updated>
+    <summary>Design Language 1.9.0</summary>
+  </entry>
+  <entry>
+    <title>New Relic Deployment Notifier 1.4</title>
+    <link href='https://plugins.jenkins.io/newrelic-deployment-notifier' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:newrelic-deployment-notifier:1.4</id>
+    <published>2018-10-10T17:37:04.865+00:00</published>
+    <updated>2018-10-10T17:37:04.865+00:00</updated>
+    <summary>New Relic Deployment Notifier 1.4</summary>
+  </entry>
+  <entry>
+    <title>OverOps Query 1.0.10</title>
+    <link href='https://plugins.jenkins.io/overops-query' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.overops.plugins:overops-query:1.0.10</id>
+    <published>2018-10-10T13:13:09.299+00:00</published>
+    <updated>2018-10-10T13:13:09.299+00:00</updated>
+    <summary>OverOps Query 1.0.10</summary>
+  </entry>
+  <entry>
+    <title>Security Inspector 0.5</title>
+    <link href='https://plugins.jenkins.io/security-inspector' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:security-inspector:0.5</id>
+    <published>2018-10-10T12:06:52.013+00:00</published>
+    <updated>2018-10-10T12:06:52.013+00:00</updated>
+    <summary>Security Inspector 0.5</summary>
+  </entry>
+  <entry>
+    <title>SQLPlus Script Runner 2.0.4</title>
+    <link href='https://plugins.jenkins.io/sqlplus-script-runner' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:sqlplus-script-runner:2.0.4</id>
+    <published>2018-10-10T03:30:30.594+00:00</published>
+    <updated>2018-10-10T03:30:30.594+00:00</updated>
+    <summary>SQLPlus Script Runner 2.0.4</summary>
+  </entry>
+  <entry>
+    <title>Xcode integration 2.0.8</title>
+    <link href='https://plugins.jenkins.io/xcode-plugin' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:xcode-plugin:2.0.8</id>
+    <published>2018-10-10T01:41:38.503+00:00</published>
+    <updated>2018-10-10T01:41:38.503+00:00</updated>
+    <summary>Xcode integration 2.0.8</summary>
+  </entry>
+  <entry>
+    <title>Alauda DevOps Sync 0.2.18</title>
+    <link href='https://plugins.jenkins.io/alauda-devops-sync' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.alauda.jenkins.plugins:alauda-devops-sync:0.2.18</id>
+    <published>2018-10-09T06:09:26.707+00:00</published>
+    <updated>2018-10-09T06:09:26.707+00:00</updated>
+    <summary>Alauda DevOps Sync 0.2.18</summary>
+  </entry>
+  <entry>
+    <title>Git Parameter 0.9.6</title>
+    <link href='https://plugins.jenkins.io/git-parameter' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.tools:git-parameter:0.9.6</id>
+    <published>2018-10-09T10:36:24.408+00:00</published>
+    <updated>2018-10-09T10:36:24.408+00:00</updated>
+    <summary>Git Parameter 0.9.6</summary>
+  </entry>
+  <entry>
+    <title>Gradle Repo 1.0.0 (new)</title>
+    <link href='https://plugins.jenkins.io/gradle-repo' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:gradle-repo:1.0.0</id>
+    <published>2018-10-09T17:38:35.204+00:00</published>
+    <updated>2018-10-09T17:38:35.204+00:00</updated>
+    <summary>Gradle Repo 1.0.0</summary>
+  </entry>
+  <entry>
+    <title>Vault Pipeline 1.0 (new)</title>
+    <link href='https://plugins.jenkins.io/hashicorp-vault-pipeline' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:io.jenkins.plugins:hashicorp-vault-pipeline:1.0</id>
+    <published>2018-10-09T21:29:28.384+00:00</published>
+    <updated>2018-10-09T21:29:28.384+00:00</updated>
+    <summary>Vault Pipeline 1.0</summary>
+  </entry>
+  <entry>
+    <title>Localization: Chinese (Simplified) 0.0.10</title>
+    <link href='https://plugins.jenkins.io/localization-zh-cn' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.jenkins-ci.plugins:localization-zh-cn:0.0.10</id>
+    <published>2018-10-09T02:24:11.828+00:00</published>
+    <updated>2018-10-09T02:24:11.828+00:00</updated>
+    <summary>Localization: Chinese (Simplified) 0.0.10</summary>
+  </entry>
+  <entry>
+    <title>OpenShift Client 1.0.20</title>
+    <link href='https://plugins.jenkins.io/openshift-client' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:com.openshift.jenkins.plugins:openshift-client:1.0.20</id>
+    <published>2018-10-09T21:36:09.422+00:00</published>
+    <updated>2018-10-09T21:36:09.422+00:00</updated>
+    <summary>OpenShift Client 1.0.20</summary>
+  </entry>
+  <entry>
+    <title>OverOps Query 1.0.6</title>
+    <link href='https://plugins.jenkins.io/overops-query' rel='alternate' type='text/html' />
+    <id>urn:63067410335c11e0bc8e0800200c9a66:org.overops.plugins:overops-query:1.0.6</id>
+    <published>2018-10-09T19:25:58.638+00:00</published>
+    <updated>2018-10-09T19:25:58.638+00:00</updated>
+    <summary>OverOps Query 1.0.6</summary>
+  </entry>
+</feed>
