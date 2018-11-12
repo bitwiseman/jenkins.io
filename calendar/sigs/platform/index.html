@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Platform
+</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="Jenkins is an open source automation server" name="description">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/sites/default/files/jenkins_favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/img/favicon.ico" rel="icon" sizes="32x32" type="img/png">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<meta content="Platform" name="apple-mobile-web-app-title">
+<!-- Twitter Card data -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@JenkinsCI" name="twitter:site">
+<meta content="Platform" name="twitter:title">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="twitter:description">
+<meta content="@JenkinsCI" name="twitter:creator">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<!-- Open Graph data -->
+<meta content="Platform" property="og:title">
+<meta content="article" property="og:type">
+<meta content="https://bitwiseman.github.io/jenkins.io/calendar/sigs/platform/index.html" property="og:url">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="og:description">
+<meta content="Platform" property="og:site_name">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/assets/bower/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/assets/bower/tether/css/tether.min.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/css/font-icons.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/css/jenkins.css" media="screen" rel="stylesheet">
+<!-- Non-obtrusive CSS styles -->
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/assets/bower/ionicons/css/ionicons.min.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/css/footer.css" media="screen" rel="stylesheet">
+<link href="https://bitwiseman.github.io/jenkins.io/calendar/css/font-awesome.min.css" media="screen" rel="stylesheet">
+</head>
+<body>
+<script src="https://bitwiseman.github.io/jenkins.io/calendar/assets/bower/jquery/jquery.js"></script>
+<!-- starting partial toptoolbar.html.haml -->
+<nav class="navbar navbar-expand-md navbar-dark top bg-dark fixed-top" id="ji-toolbar">
+<a class="navbar-brand" href="https://bitwiseman.github.io/jenkins.io/calendar">
+Jenkins
+</a>
+<button class="navbar-toggler" data-target="#CollapsingNavbar" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="CollapsingNavbar">
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://bitwiseman.github.io/jenkins.io/calendar/node">
+Blog
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Documentation
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/calendar/doc">
+Use Jenkins
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/calendar/doc/developer">
+Extend Jenkins
+</a>
+<span class="dropdown-item">
+<strong>
+Use-cases
+</strong>
+</span>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/android">
+&nbsp;-&nbsp;Android
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/c">
+&nbsp;-&nbsp;C/C++
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/docker">
+&nbsp;-&nbsp;Docker
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/embedded">
+&nbsp;-&nbsp;Embedded
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/github">
+&nbsp;-&nbsp;GitHub
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/java">
+&nbsp;-&nbsp;Java
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/php">
+&nbsp;-&nbsp;PHP
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/pipeline">
+&nbsp;-&nbsp;Continuous Delivery
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/python">
+&nbsp;-&nbsp;Python
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/ruby">
+&nbsp;-&nbsp;Ruby
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://plugins.jenkins.io/">
+Plugins
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Community
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/participate">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/chat" title="Chat with the rest of the Jenkins community on IRC">
+Chat
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/jam">
+Meet
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/events">
+Events
+</a>
+<a class="dropdown-item feature" href="https://issues.jenkins-ci.org/">
+Issue Tracker
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/mailing-lists" title="Browse Jenkins mailing list archives and/or subscribe to lists">
+Mailing Lists
+</a>
+<a class="dropdown-item feature" href="https://wiki.jenkins.io/">
+Wiki
+</a>
+<a class="dropdown-item feature" href="https://accounts.jenkins.io/" title="Create/manage your account for accessing wiki, issue tracker, etc">
+Account Management
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/sigs/">
+<strong>
+Special Interest Groups
+</strong>
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/sigs/chinese-localization/">
+&nbsp;-&nbsp;Chinese Localization
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/sigs/cloud-native/">
+&nbsp;-&nbsp;Cloud Native
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/sigs/gsoc/">
+&nbsp;-&nbsp;Google Summer of Code
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/sigs/pipeline-authoring/">
+&nbsp;-&nbsp;Pipeline Authoring
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/sigs/platform/">
+&nbsp;-&nbsp;Platform
+</a>
+</div>
+</li>
+<li class="dropdown nav-item">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Sub-projects</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/blueocean/">
+Blue Ocean
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/evergreen/">
+Evergreen
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/gsoc/">
+Google Summer of Code in Jenkins
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/infrastructure/">
+Infrastructure
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/jam/">
+Jenkins Area Meetups
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/jcasc/">
+Jenkins Configuration as Code
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/jenkins-x/">
+Jenkins X
+</a>
+<a class="dropdown-item feature" href="https://bitwiseman.github.io/jenkins.io/calendar/projects/remoting/">
+Jenkins Remoting
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+About
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/calendar/security">
+Security
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/calendar/press">
+Press
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/calendar/awards">
+Awards
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/calendar/project/conduct">
+Conduct
+</a>
+<a class="dropdown-item" href="https://bitwiseman.github.io/jenkins.io/calendar/artwork">
+Artwork
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-outline-secondary" href="https://bitwiseman.github.io/jenkins.io/calendar/download">
+Download
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Spacing to make the fixed-top sticky navbar not occlude any content below it -->
+<div class="pt-4">
+&nbsp;
+</div>
+
+<!-- ending partial toptoolbar.html.haml -->
+<script>
+  $(function () {
+    for (var i = 1 ; i <= 6 ; i ++) {
+      anchors.add('.container .row .col-lg9 h' + i);
+    }
+  })
+</script>
+<div class="container">
+<div class="row body">
+<div class="col-lg-9">
+<h1>
+Platform
+</h1>
+<div class="container">
+<div class="row body">
+<div class="col-lg-8">
+<img src="https://bitwiseman.github.io/jenkins.io/calendar/images/user.gif" style="float:right" title="Logo">
+<h2 class="title">
+Overview
+</h2>
+<p>
+This special interest group offers a venue for all kinds of platform support discussions: Java, Operating Systems, Architectures, Docker, Packaging, Web Containers, etc. The SIG works on defining platform support policies, coordinating platform support efforts with contributors and external communities, and reviewing proposals in the area.
+
+</p>
+<a href="/sigs" target="_blank">
+(Back to List of Jenkins Special Interest Groups )
+</a>
+</div>
+<div class="col-lg-4">
+<h2 class="title">
+Links
+</h2>
+<ul>
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkins-platform-sig" target="_blank">
+Mailing List
+</a>
+</li>
+<li>
+<a href="https://gitter.im/jenkinsci/platform-sig?utm_source=share-link&amp;utm_medium=link&amp;utm_campaign=share-link" target="_blank">
+<img src="https://badges.gitter.im/jenkinsci/platform-sig.svg" title="Gitter">
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<h2 class="title">
+Members
+</h2>
+</div>
+<div class="col-lg-4">
+Lead:
+<ul>
+<li>
+<a href="https://github.com/oleg-nenashev" target="_blank">
+Oleg Nenashev
+</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4">
+Participants:
+<ul>
+<li>
+<a href="https://github.com/slide" target="_blank">
+Alex Earl
+</a>
+</li>
+<li>
+<a href="https://github.com/davidcurrie" target="_blank">
+David Currie
+</a>
+</li>
+<li>
+<a href="https://github.com/dwnusbaum" target="_blank">
+Devin Nusbaum
+</a>
+</li>
+<li>
+<a href="https://github.com/imdurgadas" target="_blank">
+Durgadas Kamath
+</a>
+</li>
+<li>
+<a href="https://github.com/bitwiseman" target="_blank">
+Liam Newman
+</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4">
+&nbsp;
+<ul>
+<li>
+<a href="https://github.com/markewaite" target="_blank">
+Mark Waite
+</a>
+</li>
+<li>
+<a href="https://github.com/ndeloof" target="_blank">
+Nicolas De loof
+</a>
+</li>
+<li>
+<a href="https://github.com/rsandell" target="_blank">
+Robert Sandell
+</a>
+</li>
+<li>
+<a href="https://github.com/svanoort" target="_blank">
+Samuel Van Oort
+</a>
+</li>
+<li>
+<a href="https://github.com/tracymiranda" target="_blank">
+Tracy Miranda
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<h2 class="title">
+Description
+</h2>
+<div class="paragraph">
+<p>The special interest group offers a venue for all kinds of platform support discussions:
+Java, Operating Systems, Architectures, Docker, Packaging, Web Containers, etc.</p>
+</div>
+<div class="paragraph">
+<p>The group focuses on technologies used in Jenkins:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Java Virtual Machines: versions, compatibility and optmizations</p>
+</li>
+<li>
+<p>Operating Systems: native components, packaging</p>
+</li>
+<li>
+<p>Architectures and platforms</p>
+</li>
+<li>
+<p>Web Containers</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Platform SIG may be cooperating with other groups.
+For example, we will be cooperating with the <a href="/sigs/cloud-native">Cloud-Native Jenkins group</a>
+if the topics related to Cloud-Native platforms like Kubernetes or Docker.</p>
+</div>
+<div class="sect2">
+<h3 id="topics"><a class="anchor" href="#topics"></a>Topics</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Defining platform support policies (e.g. “defining Windows support policy”)</p>
+</li>
+<li>
+<p>Coordinating effort on new platform support (e.g. Java 10 in JEP-TODO)</p>
+</li>
+<li>
+<p>Working with external communities on better platform support and packaging
+(e.g. improving support of IBM Java, enabling OpenIndiana packaging,
+ARM Support in Jenkins, adapting RedHat packaging to best practices, etc.)</p>
+</li>
+<li>
+<p>Reviewing JEPs submitted in the area</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="meetings"><a class="anchor" href="#meetings"></a>Meetings</h3>
+<div class="paragraph">
+<p>There will be regular SIG meetings scheduled.
+Initially the meetings will be conducted once per month,
+then they may be adapted according to the activity.</p>
+</div>
+<div class="paragraph">
+<p>Meetings will be conducted and recorded via Jenkins Hangouts-on-Air.
+Participant links will be posted in the SIG Gitter Chat within 10 minutes before the meeting starts.</p>
+</div>
+<div class="sect3">
+<h4 id="2018-08-29-multi-architecture-docker-image-support-for-jenkins"><a class="anchor" href="#2018-08-29-multi-architecture-docker-image-support-for-jenkins"></a>2018-08-29. Multi-architecture docker image support for Jenkins</h4>
+<div class="paragraph">
+<p>Sync-up call about <a href="https://issues.jenkins-ci.org/browse/52785">JENKINS-52785: Support of Multi-Architecture Docker images in Jenkins</a>.
+We discussed ways to get these images built and/or hosted within Jenkins project.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.google.com/document/d/1YofL2uhy7xAa1mx_qFdDvDg4P-molmhDwFD0-8xX8mI/edit">Meeting notes</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=6SeDJXgzUCA">Youtube video</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="2018-08-23-eclipse-openj9-and-jenkins"><a class="anchor" href="#2018-08-23-eclipse-openj9-and-jenkins"></a>2018-08-23. Eclipse OpenJ9 and Jenkins</h4>
+<div class="paragraph">
+<p>This online meetup is about Eclipse OpenJ9 and Jenkins.
+The discussion will be led by Steve Poole (Eclipse Openj9), and Tracy Miranda where they aim to shed light on some questions.
+Can Jenkins stand to gain any performance boosts by taking advantage of Eclipse OpenJ9 and its optimizations?
+How can the two open source communities collaborate to drive improvements for Jenkins running in the cloud?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.meetup.com/Jenkins-online-meetup/events/253769950/">Jenkins Online Meetup page</a></p>
+</li>
+<li>
+<p><a href="https://docs.google.com/document/d/1RuD5f78bpakBmWy0bwap424IysxV1B3uj2-NbkTC9E0/edit#">Meeting notes</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="2018-08-15-status-meeting"><a class="anchor" href="#2018-08-15-status-meeting"></a>2018-08-15. Status meeting</h4>
+<div class="paragraph">
+<p>Status sync-up: Java 10+ support in Jenkins (JEP-211),
+64-bit Windows installers, Chocolatey packaging, and other topics.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=bbWO89HPMUM">Youtube video</a></p>
+</li>
+<li>
+<p><a href="https://docs.google.com/document/d/1OgQCeyHNEV2GVx6phsNX_RtzpAiJWtKLUdAm1NDF6vY/edit">Meeting Agenda and Notes</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<a href="/sigs" target="_blank">
+(Back to List of Jenkins Special Interest Groups)
+</a>
+</div>
+</div>
+</div>
+
+</div>
+<div class="col-lg-3">
+<div class="sidebar-nav">
+<h4>
+On this page
+</h4>
+<ul class="sectlevel2">
+<li><a href="#topics">Topics</a></li>
+<li><a href="#meetings">Meetings</a></li>
+</ul>
+</div>
+<div>
+<h4>
+Connect
+</h4>
+<ul>
+<li>
+<a href="https://gitter.im/jenkinsci/platform-sig" target="_blank">
+<img src="https://badges.gitter.im/jenkinsci/platform-sig.svg" title="Gitter">
+</a>
+</li>
+</ul>
+</div>
+<div>
+<div class="block block-block even blog-posts" id="block-block-15">
+<h4 class="title">
+Recent Blog Posts
+</h4>
+<ul>
+<li>
+<a href="/blog/2017/02/07/declarative-maven-project/">
+Declarative Pipeline for Maven Projects
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="https://bitwiseman.github.io/jenkins.io/calendar/assets/bower/anchor-js/anchor.min.js"></script>
+<script src="https://bitwiseman.github.io/jenkins.io/calendar/assets/bower/tether/js/tether.min.js"></script>
+<script src="https://bitwiseman.github.io/jenkins.io/calendar/assets/bower/bootstrap/js/bootstrap.min.js"></script>
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<p class="box">
+<a href="https://github.com/jenkins-infra/jenkins.io/edit/master/content//sigs/platform/index.adoc" title="Edit /sigs/platform/index.adoc on GitHub">
+Improve this page
+</a>
+|
+<a href="https://github.com/jenkins-infra/jenkins.io/commits/master/content//sigs/platform/index.adoc" title="View /sigs/platform/index.adoc history on GitHub">
+Page history
+</a>
+</p>
+<div class="license-box">
+<div id="creativecommons">
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">
+<p>
+<img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png">
+</p>
+</a>
+<p>
+The content driving this site is licensed under the Creative
+Commons Attribution-ShareAlike 4.0 license.
+</p>
+</div>
+</div>
+</div>
+<div class="links col-md-8">
+<div class="container">
+<div class="row">
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Resources</h5>
+<ul class="resources">
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/events">
+Events
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/doc">
+Documentation
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/node">
+Blog
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Solutions</h5>
+<ul>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/android">
+Android
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/c">
+C/C++
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/docker">
+Docker
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/embedded">
+Embedded
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/github">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/java">
+Java
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/php">
+PHP
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/pipeline">
+Continuous Delivery
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/python">
+Python
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/solutions/ruby">
+Ruby
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Project</h5>
+<ul class="project">
+<li>
+<a href="https://issues.jenkins-ci.org">
+Issue tracker
+</a>
+</li>
+<li>
+<a href="https://wiki.jenkins.io">
+Wiki
+</a>
+</li>
+<li>
+<a href="https://github.com/jenkinsci">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://ci.jenkins.io">
+Jenkins on Jenkins
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Community</h5>
+<ul class="community">
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-users">
+Users mailing list
+</a>
+</li>
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-dev">
+Developers mailing list
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/sigs">
+Special Interest Groups
+</a>
+</li>
+<li>
+<a href="https://twitter.com/jenkinsci">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://reddit.com/r/jenkinsci">
+Reddit
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/merchandise">
+Merchandise
+</a>
+</li>
+<li>
+<a href="https://bitwiseman.github.io/jenkins.io/calendar/awards">
+Awards
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+ga('create', 'UA-000000-0', 'auto');
+ga('send', 'pageview');
+ga('set', 'anonymizeIp', true);
+
+</script>
+
+<script>
+  !function(d,s,id) {
+    var js, fjs=d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id=id;
+      js.src="//platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document,"script","twitter-wjs");
+</script>
+</body>
+</html>
