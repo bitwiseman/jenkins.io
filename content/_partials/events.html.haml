@@ -1,4 +1,5 @@
 
+- calendarParams = page.calendarParams || ''
 .container
   .row
     .col
@@ -26,8 +27,8 @@
   :plain
     var deviceTimeZone = jstz.determine().name();
     var calendarSrc = 'https://calendar.google.com/calendar/b/1/embed'
-      + '?title=Upcoming%20Events&amp;showDate=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA'
-      + '&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF'
+      + '?showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF'
+      + '#{calendarParams}'
       + '&amp;src=4ss12f0mqr3tbp1t2fe369slf4%40group.calendar.google.com&amp;color=%2329527A'
       + '&amp;ctz='
 

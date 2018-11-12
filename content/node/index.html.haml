@@ -96,5 +96,6 @@ section: blog
 
 
     .col-md-4.events.vertical
-      .content
-        = partial('events.html.haml')
+      .row
+        .col
+          = partial('events.html.haml', :calendarParams => '&amp;title=Upcoming%20Events&amp;showDate=0&amp;showTabs=0&amp;mode=AGENDA' )
